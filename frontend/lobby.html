@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>IPL Auction Lobby</title>
+
+<link rel="stylesheet"
+href="./style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="lobby-page">
+
+<div class="lobby-container">
+
+<div class="lobby-top">
+
+<div>
+
+<p class="team-badge-top">
+MULTIPLAYER ROOM
+</p>
+
+<h1 class="lobby-title">
+Auction Lobby
+</h1>
+
+<p class="pool-subtitle">
+Invite friends using room code
+</p>
+
+</div>
+
+<div class="room-code-box">
+
+<p>ROOM CODE</p>
+
+<h1 id="room-code">
+IPL3130
+</h1>
+
+</div>
+
+</div>
+
+<div class="joined-teams">
+
+<h2>
+Joined Teams
+</h2>
+
+<div id="joined-list"
+class="team-list">
+
+</div>
+
+</div>
+
+<button
+class="start-auction"
+onclick="startAuction()">
+
+START AUCTION
+
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+const roomCode =
+localStorage.getItem("roomCode") || "IPL3130";
+
+document.getElementById(
+"room-code"
+).innerText = roomCode;
+
+const selectedTeam =
+localStorage.getItem("selectedTeam");
+
+const coach =
+localStorage.getItem("coachName");
+
+document.getElementById(
+"joined-list"
+).innerHTML += `
+
+<div class="team-card">
+
+<h3>${selectedTeam}</h3>
+
+<p>
+Coach: ${coach}
+</p>
+
+</div>
+
+`;
+
+function startAuction(){
+
+window.location.href =
+"retentionmul.html";
+
+}
+
+</script>
+
+</body>
+</html>

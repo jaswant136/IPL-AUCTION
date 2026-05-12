@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Select Franchise</title>
+
+<link rel="stylesheet"
+href="./style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="team-select-page">
+
+<!-- NAVBAR -->
+
+<div class="team-navbar">
+
+<div class="team-logo-main">
+
+IPL<span>X</span>
+
+</div>
+
+<div class="team-nav-links">
+
+<a href="home.html">
+
+Home
+
+</a>
+
+<a href="#">
+
+Auction
+
+</a>
+
+<a href="#">
+
+Teams
+
+</a>
+
+</div>
+
+</div>
+
+<!-- TOP -->
+
+<div class="team-top">
+
+<div class="team-badge-top">
+
+MEGA AUCTION 2026
+
+</div>
+
+<h1>
+
+Choose Your Franchise
+
+</h1>
+
+<p>
+
+Select your IPL franchise and
+enter multiplayer auction lobby
+
+</p>
+
+</div>
+
+<!-- COACH INPUT -->
+
+<div class="coach-box">
+
+<input
+type="text"
+id="coach-name"
+placeholder="Enter Coach Name">
+
+</div>
+
+<!-- TEAM GRID -->
+
+<div class="team-select-grid">
+
+<!-- CSK -->
+
+<div class="team-select-card"
+onclick="selectTeam('CSK',this)">
+
+<div class="team-logo">
+
+CSK
+
+</div>
+
+<h2>
+
+CSK
+
+</h2>
+
+<p>
+
+CHENNAI SUPER KINGS
+
+</p>
+
+</div>
+
+<!-- MI -->
+
+<div class="team-select-card"
+onclick="selectTeam('MI',this)">
+
+<div class="team-logo">
+
+MI
+
+</div>
+
+<h2>
+
+MI
+
+</h2>
+
+<p>
+
+MUMBAI INDIANS
+
+</p>
+
+</div>
+
+<!-- RCB -->
+
+<div class="team-select-card"
+onclick="selectTeam('RCB',this)">
+
+<div class="team-logo">
+
+RCB
+
+</div>
+
+<h2>
+
+RCB
+
+</h2>
+
+<p>
+
+ROYAL CHALLENGERS
+
+</p>
+
+</div>
+
+<!-- KKR -->
+
+<div class="team-select-card"
+onclick="selectTeam('KKR',this)">
+
+<div class="team-logo">
+
+KKR
+
+</div>
+
+<h2>
+
+KKR
+
+</h2>
+
+<p>
+
+KOLKATA KNIGHT RIDERS
+
+</p>
+
+</div>
+
+<!-- SRH -->
+
+<div class="team-select-card"
+onclick="selectTeam('SRH',this)">
+
+<div class="team-logo">
+
+SRH
+
+</div>
+
+<h2>
+
+SRH
+
+</h2>
+
+<p>
+
+SUNRISERS HYDERABAD
+
+</p>
+
+</div>
+
+<!-- RR -->
+
+<div class="team-select-card"
+onclick="selectTeam('RR',this)">
+
+<div class="team-logo">
+
+RR
+
+</div>
+
+<h2>
+
+RR
+
+</h2>
+
+<p>
+
+RAJASTHAN ROYALS
+
+</p>
+
+</div>
+
+<!-- DC -->
+
+<div class="team-select-card"
+onclick="selectTeam('DC',this)">
+
+<div class="team-logo">
+
+DC
+
+</div>
+
+<h2>
+
+DC
+
+</h2>
+
+<p>
+
+DELHI CAPITALS
+
+</p>
+
+</div>
+
+<!-- LSG -->
+
+<div class="team-select-card"
+onclick="selectTeam('LSG',this)">
+
+<div class="team-logo">
+
+LSG
+
+</div>
+
+<h2>
+
+LSG
+
+</h2>
+
+<p>
+
+LUCKNOW SUPER GIANTS
+
+</p>
+
+</div>
+
+<!-- GT -->
+
+<div class="team-select-card"
+onclick="selectTeam('GT',this)">
+
+<div class="team-logo">
+
+GT
+
+</div>
+
+<h2>
+
+GT
+
+</h2>
+
+<p>
+
+GUJARAT TITANS
+
+</p>
+
+</div>
+
+<!-- PBKS -->
+
+<div class="team-select-card"
+onclick="selectTeam('PBKS',this)">
+
+<div class="team-logo">
+
+PBKS
+
+</div>
+
+<h2>
+
+PBKS
+
+</h2>
+
+<p>
+
+PUNJAB KINGS
+
+</p>
+
+</div>
+
+</div>
+
+<!-- BUTTON -->
+
+<div class="bottom-btn">
+
+<button onclick="continueLobby()">
+
+ENTER LOBBY
+
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+let selectedTeam = "";
+
+// ======================
+// SELECT TEAM
+// ======================
+
+function selectTeam(team, element){
+
+selectedTeam = team;
+
+const cards =
+document.querySelectorAll(
+".team-select-card"
+);
+
+cards.forEach(card => {
+
+card.classList.remove(
+"selected-team"
+);
+
+});
+
+element.classList.add(
+"selected-team"
+);
+
+localStorage.setItem(
+"selectedTeam",
+team
+);
+
+}
+
+// ======================
+// CONTINUE TO LOBBY
+// ======================
+
+function continueLobby(){
+
+const coach =
+document.getElementById(
+"coach-name"
+).value;
+
+if(selectedTeam === ""){
+
+alert(
+"Please select a franchise"
+);
+
+return;
+}
+
+if(coach.trim() === ""){
+
+alert(
+"Please enter coach name"
+);
+
+return;
+}
+
+localStorage.setItem(
+"coachName",
+coach
+);
+
+// ======================
+// GO TO LOBBY
+// ======================
+
+window.location.href =
+"lobby.html";
+
+}
+
+</script>
+
+</body>
+
+</html>

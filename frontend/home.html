@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>IPLX Auction Simulator</title>
+
+<link rel="stylesheet"
+href="./style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="logo">
+
+IPL<span>X</span>
+
+</div>
+
+<div class="nav-links">
+
+<a href="#">Home</a>
+<a href="home.html">Modes</a>
+<a href="index.html">Auction</a>
+<a href="teams.html">Teams</a>
+<a href="pool.html">Pools</a>
+
+</div>
+
+<div class="nav-right">
+
+
+<div class="profile-box"
+onclick="window.location.href='profile.html'">
+
+<img
+id="profile-img"
+class="profile-img"
+src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero-section">
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+<div class="hero-left">
+
+<div class="hero-badge">
+
+<div class="live-dot"></div>
+
+LIVE IPL AUCTION EXPERIENCE
+
+</div>
+
+<h1 class="hero-title">
+
+Build Your
+Ultimate IPL
+Auction Dynasty
+
+</h1>
+
+<p class="hero-desc">
+
+Experience realistic IPL mega auctions with
+live bidding wars, AI franchises, RTM cards,
+retentions and multiplayer rooms.
+
+</p>
+
+<div class="hero-buttons">
+
+<button
+class="hero-primary-btn"
+onclick="createRoom()"//"window.location.href='teamselectmul.html'"// >
+
+CREATE ROOM
+
+</button>
+
+<button
+class="hero-secondary-btn"
+onclick="window.location.href='teamselect.html'">
+
+PLAY SOLO
+
+</button>
+
+</div>
+
+<div class="hero-stats">
+
+<div class="hero-stat-box">
+
+<h2>
+
+10
+
+</h2>
+
+<p>
+
+Franchises
+
+</p>
+
+</div>
+
+<div class="hero-stat-box">
+
+<h2>
+
+500+
+
+</h2>
+
+<p>
+
+Players
+
+</p>
+
+</div>
+
+<div class="hero-stat-box">
+
+<h2>
+
+LIVE
+
+</h2>
+
+<p>
+
+Auctions
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<div class="auction-live-card">
+
+<div class="auction-card-top">
+
+<div>
+
+<p class="card-mini-text">
+
+CURRENT PLAYER
+
+</p>
+
+<h2>
+
+Virat Kohli
+
+</h2>
+
+</div>
+
+<div class="timer-pill">
+
+10s
+
+</div>
+
+</div>
+
+<img
+src="https://documents.iplt20.com/ipl/IPLHeadshot2024/2.png"
+class="hero-player-img"
+>
+
+<div class="auction-info-grid">
+
+<div class="auction-info-box">
+
+<p>
+
+Current Bid
+
+</p>
+
+<h3>
+
+₹18 Cr
+
+</h3>
+
+</div>
+
+<div class="auction-info-box">
+
+<p>
+
+Highest Bidder
+
+</p>
+
+<h3>
+
+RCB
+
+</h3>
+
+</div>
+
+</div>
+
+<div class="live-bid-row">
+
+<div class="live-bid-team rcb">
+
+RCB
+
+</div>
+
+<div class="live-bid-team csk">
+
+CSK
+
+</div>
+
+<div class="live-bid-team mi">
+
+MI
+
+</div>
+
+<div class="live-bid-team gt">
+
+GT
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FEATURES -->
+
+<section class="features-section">
+
+<h1>
+
+Why IPLX?
+
+</h1>
+
+<div class="features-grid">
+
+<div class="feature-card">
+
+<div class="feature-icon">
+
+⚡
+
+</div>
+
+<h2>
+
+Real-Time Auction
+
+</h2>
+
+<p>
+
+Live multiplayer auction
+with synchronized bidding.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="feature-icon">
+
+🏏
+
+</div>
+
+<h2>
+
+Build Playing XI
+
+</h2>
+
+<p>
+
+Buy players and create your
+ultimate IPL squad.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="feature-icon">
+
+🏆
+
+</div>
+
+<h2>
+
+RTM + Retention
+
+</h2>
+
+<p>
+
+Use retention rules and RTM cards
+like official IPL auctions.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="home.js"></script>
+
+<script>
+
+const profileImg =
+document.getElementById(
+"profile-img"
+);
+
+const savedPhoto =
+localStorage.getItem(
+"userPhoto"
+);
+
+if(savedPhoto){
+
+profileImg.src = savedPhoto;
+
+}
+
+// =======================
+// MULTIPLAYER ROOM
+// =======================
+
+function createRoom(){
+
+alert(
+"Multiplayer rooms coming soon!"
+);
+
+}
+
+// =======================
+// JOIN ROOM
+// =======================
+
+function joinRoom(){
+
+alert(
+"Join room feature coming soon!"
+);
+
+}
+
+</script>
+
+</body>
+
+</html>

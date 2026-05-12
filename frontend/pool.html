@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>IPL Auction Pools</title>
+
+<link rel="stylesheet"
+href="./style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+rel="stylesheet">
+
+<style>
+
+body{
+margin:0;
+padding:0;
+background:#00124d;
+font-family:'Inter',sans-serif;
+color:white;
+}
+
+.pool-page{
+padding:40px;
+}
+
+.pool-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:40px;
+}
+
+.pool-title{
+font-size:80px;
+font-weight:800;
+margin:0;
+}
+
+.pool-subtitle{
+font-size:20px;
+color:#cbd5e1;
+margin-top:10px;
+}
+
+.back-btn{
+background:#1e2d6b;
+border:none;
+padding:18px 35px;
+border-radius:18px;
+font-size:18px;
+font-weight:700;
+color:white;
+cursor:pointer;
+}
+
+.live-pool-card{
+background:linear-gradient(
+90deg,
+#16245c,
+#101c56
+);
+
+padding:40px;
+border-radius:30px;
+margin-bottom:40px;
+border:1px solid rgba(255,255,255,0.08);
+}
+
+.live-pool-card p{
+font-size:20px;
+color:#cbd5e1;
+margin:0 0 10px 0;
+}
+
+.live-pool-card h2{
+font-size:80px;
+margin:0;
+}
+
+/* ===================== */
+/* LAYOUT */
+/* ===================== */
+
+.pool-layout{
+display:flex;
+gap:30px;
+align-items:flex-start;
+}
+
+/* ===================== */
+/* SIDEBAR */
+/* ===================== */
+
+.pool-sidebar{
+width:320px;
+background:#101c56;
+padding:25px;
+border-radius:30px;
+position:sticky;
+top:20px;
+}
+
+.pool-side-title{
+font-size:28px;
+font-weight:800;
+margin-bottom:25px;
+}
+
+.pool-buttons{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+}
+
+.pool-btn{
+background:#182760;
+border:none;
+padding:18px 30px;
+border-radius:18px;
+font-size:20px;
+font-weight:700;
+color:white;
+cursor:pointer;
+transition:0.3s;
+}
+
+.pool-btn:hover{
+transform:translateY(-3px);
+background:#2563eb;
+}
+
+.pool-btn.active{
+background:#2563eb;
+border:2px solid white;
+}
+
+/* ===================== */
+/* CONTENT */
+/* ===================== */
+
+.pool-content{
+flex:1;
+}
+
+/* ===================== */
+/* PLAYERS */
+/* ===================== */
+
+.pool-players-grid{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.pool-player-card{
+background:linear-gradient(
+180deg,
+#16245c,
+#101c56
+);
+
+padding:35px;
+border-radius:28px;
+border:1px solid rgba(255,255,255,0.08);
+transition:0.3s;
+position:relative;
+overflow:hidden;
+}
+
+.pool-player-card:hover{
+transform:translateY(-5px);
+border-color:#2563eb;
+}
+
+.pool-player-img{
+width:120px;
+height:120px;
+object-fit:cover;
+border-radius:50%;
+display:block;
+margin:auto;
+margin-bottom:25px;
+background:#091544;
+}
+
+.pool-player-card h2{
+font-size:36px;
+margin-bottom:10px;
+line-height:1.1;
+}
+
+.pool-role{
+font-size:20px;
+color:#cbd5e1;
+margin-bottom:18px;
+}
+
+.pool-price{
+font-size:30px;
+font-weight:800;
+color:#60a5fa;
+}
+
+.sold-tag{
+margin-top:20px;
+display:inline-block;
+padding:10px 18px;
+border-radius:12px;
+font-size:16px;
+font-weight:700;
+background:#ef4444;
+}
+
+.available-tag{
+margin-top:20px;
+display:inline-block;
+padding:10px 18px;
+border-radius:12px;
+font-size:16px;
+font-weight:700;
+background:#22c55e;
+}
+
+.unsold-tag{
+margin-top:20px;
+display:inline-block;
+padding:10px 18px;
+border-radius:12px;
+font-size:16px;
+font-weight:700;
+background:#f59e0b;
+}
+
+.empty-pool{
+font-size:32px;
+font-weight:700;
+padding:50px;
+text-align:center;
+background:#101c56;
+border-radius:25px;
+}
+
+/* ===================== */
+/* MOBILE */
+/* ===================== */
+
+@media(max-width:900px){
+
+.pool-layout{
+flex-direction:column;
+}
+
+.pool-sidebar{
+width:100%;
+position:relative;
+}
+
+.pool-title{
+font-size:55px;
+}
+
+.live-pool-card h2{
+font-size:50px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="pool-page">
+
+<!-- HEADER -->
+
+<div class="pool-header">
+
+<div>
+
+<h1 class="pool-title">
+Auction Pools
+</h1>
+
+<p class="pool-subtitle">
+Click a pool to view all players
+</p>
+
+</div>
+
+<button
+class="back-btn"
+onclick="window.location.href='index.html'">
+
+← Back To Auction
+
+</button>
+
+</div>
+
+<!-- LIVE POOL -->
+
+<div class="live-pool-card">
+
+<p>
+CURRENT LIVE POOL
+</p>
+
+<h2 id="live-pool">
+SELECT POOL
+</h2>
+
+</div>
+
+<!-- MAIN LAYOUT -->
+
+<div class="pool-layout">
+
+<!-- SIDEBAR -->
+
+<div class="pool-sidebar">
+
+<h3 class="pool-side-title">
+Auction Sets
+</h3>
+
+<div id="pool-buttons"
+class="pool-buttons">
+
+</div>
+
+</div>
+
+<!-- PLAYERS -->
+
+<div class="pool-content">
+
+<div id="pool-players"
+class="pool-players-grid">
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+let poolsData = {};
+
+// ==========================
+// LOAD POOLS
+// ==========================
+
+async function loadPools(){
+
+try{
+
+const response = await fetch(
+"http://127.0.0.1:5000/pools"
+);
+
+const data = await response.json();
+
+poolsData = data.pools || data;
+
+// ==========================
+// BUTTONS
+// ==========================
+
+const buttonsContainer =
+document.getElementById(
+"pool-buttons"
+);
+
+buttonsContainer.innerHTML = "";
+
+Object.keys(poolsData).forEach(pool => {
+
+buttonsContainer.innerHTML += `
+
+<button
+class="pool-btn"
+onclick="showPool('${pool}',this)">
+
+${pool}
+
+</button>
+
+`;
+
+});
+
+// DEFAULT POOL
+
+const firstPool =
+Object.keys(poolsData)[0];
+
+if(firstPool){
+
+const firstBtn =
+document.querySelector(".pool-btn");
+
+showPool(firstPool,firstBtn);
+
+}
+
+}catch(error){
+
+console.log(error);
+
+}
+
+}
+
+// ==========================
+// SHOW PLAYERS
+// ==========================
+
+function showPool(poolName,button){
+
+document.getElementById(
+"live-pool"
+).innerText = poolName;
+
+// ACTIVE BUTTON
+
+document.querySelectorAll(
+".pool-btn"
+).forEach(btn => {
+
+btn.classList.remove("active");
+
+});
+
+if(button){
+
+button.classList.add("active");
+
+}
+
+// PLAYERS
+
+const container =
+document.getElementById(
+"pool-players"
+);
+
+container.innerHTML = "";
+
+const players =
+poolsData[poolName] || [];
+
+if(players.length === 0){
+
+container.innerHTML = `
+
+<div class="empty-pool">
+No players in this pool
+</div>
+
+`;
+
+return;
+
+}
+
+// RENDER PLAYERS
+
+players.forEach(player => {
+
+container.innerHTML += `
+
+<div class="pool-player-card">
+
+<img
+src="${
+player.image ||
+'https://documents.iplt20.com/ipl/assets/images/ipl-logo-new-old.png'
+}"
+class="pool-player-img"
+onerror="this.src='https://documents.iplt20.com/ipl/assets/images/ipl-logo-new-old.png'"
+>
+
+<h2>
+${player.name || "Unknown Player"}
+</h2>
+
+<p class="pool-role">
+${player.role || "Unknown Role"}
+</p>
+
+<div class="pool-price">
+₹${Number(player.basePrice || 0).toFixed(2)} Cr
+</div>
+
+${
+player.unsold
+? `
+<div class="unsold-tag">
+UNSOLD
+</div>
+`
+: player.sold
+? `
+<div class="sold-tag">
+SOLD
+</div>
+`
+: `
+<div class="available-tag">
+AVAILABLE
+</div>
+`
+}
+
+</div>
+
+`;
+
+});
+
+}
+
+// ==========================
+// START
+// ==========================
+
+loadPools();
+
+</script>
+
+</body>
+
+</html>

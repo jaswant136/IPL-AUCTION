@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>CSK Squad</title>
+
+<link rel="stylesheet"
+href="../style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="team-squad-page">
+
+<div class="squad-topbar">
+
+<div>
+
+<p class="team-badge-top">
+TEAM SQUADS
+</p>
+
+<h1 class="squad-main-title">
+SQUADS
+</h1>
+
+</div>
+
+<div class="live-dot"></div>
+
+</div>
+
+<!-- TEAM CARD -->
+
+<div class="team-overview-card">
+
+<div class="team-overview-top">
+
+<div class="team-logo-box">
+
+<img
+src="https://documents.iplt20.com/ipl/PBKS/Logos/Logooutline/PBKSoutline.png"
+class="team-logo-img"
+>
+
+</div>
+
+<div>
+
+<h1>
+Chennai Super Kings
+</h1>
+
+<p class="overview-sub">
+TEAM OVERVIEW
+</p>
+
+</div>
+
+</div>
+
+<!-- STATS -->
+
+<div class="overview-stats">
+
+<div class="overview-box">
+
+<p>
+PURSE LEFT
+</p>
+
+<h2 id="team-purse">
+₹100 Cr
+</h2>
+
+</div>
+
+<div class="overview-box">
+
+<p>
+SQUAD SIZE
+</p>
+
+<h2 id="team-count">
+0/25
+</h2>
+
+</div>
+
+<div class="overview-box">
+
+<p>
+OVERSEAS
+</p>
+
+<h2 id="overseas-count">
+0/8
+</h2>
+
+</div>
+
+<div class="overview-box">
+
+<p>
+RTM CARDS
+</p>
+
+<h2 class="yellow-text">
+6
+</h2>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- PLAYERS -->
+
+<div id="players-grid"
+class="players-grid">
+
+<p class="empty-text">
+No players in squad yet.
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+async function loadTeam(){
+
+const response = await fetch(
+"http://127.0.0.1:5000/teams"
+);
+
+const data =
+await response.json();
+
+const team =
+data["CSK"];
+
+// PURSE
+
+document.getElementById(
+"team-purse"
+).innerText =
+`₹${team.purse} Cr`;
+
+// COUNT
+
+document.getElementById(
+"team-count"
+).innerText =
+`${team.players.length}/25`;
+
+// OVERSEAS
+
+let overseas = 0;
+
+team.players.forEach(player => {
+
+if(player.overseas){
+
+overseas++;
+
+}
+
+});
+
+document.getElementById(
+"overseas-count"
+).innerText =
+`${overseas}/8`;
+
+
+// PLAYERS
+
+const playersGrid =
+document.getElementById(
+"players-grid"
+);
+
+if(team.players.length === 0){
+
+playersGrid.innerHTML = `
+
+<p class="empty-text">
+No players in squad yet.
+</p>
+
+`;
+
+return;
+
+}
+
+let html = "";
+
+team.players.forEach(player => {
+
+html += `
+
+<div class="squad-player-card">
+
+<img
+src="${player.image}"
+class="squad-player-img"
+>
+
+<h3>
+${player.name}
+</h3>
+
+<p>
+${player.role}
+</p>
+
+<div class="player-price">
+
+₹${player.price} Cr
+
+</div>
+
+</div>
+
+`;
+
+});
+
+playersGrid.innerHTML = html;
+
+}
+
+loadTeam();
+
+</script>
+
+</body>
+
+</html>

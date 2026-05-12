@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>IPL Profile</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+body{
+
+background:
+linear-gradient(
+135deg,
+#000428,
+#00115f,
+#000428
+);
+
+color:white;
+
+}
+
+/* =======================
+NAVBAR
+======================= */
+
+.navbar{
+
+width:100%;
+height:90px;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:0 60px;
+
+background:
+rgba(0,0,0,0.25);
+
+backdrop-filter:blur(20px);
+
+border-bottom:
+1px solid rgba(255,255,255,0.08);
+
+position:sticky;
+top:0;
+z-index:100;
+
+}
+
+.logo{
+
+font-size:34px;
+font-weight:900;
+
+}
+
+.logo span{
+
+color:#facc15;
+
+}
+
+.nav-right{
+
+display:flex;
+align-items:center;
+gap:20px;
+
+}
+
+.play-btn{
+
+padding:14px 30px;
+
+border:none;
+
+border-radius:14px;
+
+font-size:16px;
+font-weight:800;
+
+background:
+linear-gradient(
+135deg,
+#facc15,
+#f59e0b
+);
+
+cursor:pointer;
+
+}
+
+.profile-mini{
+
+display:flex;
+align-items:center;
+gap:12px;
+
+background:
+rgba(255,255,255,0.05);
+
+padding:8px 14px;
+
+border-radius:50px;
+
+}
+
+.profile-mini img{
+
+width:45px;
+height:45px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:2px solid #3b82f6;
+
+}
+
+/* =======================
+MAIN
+======================= */
+
+.profile-page{
+
+width:100%;
+max-width:1200px;
+
+margin:auto;
+
+padding:40px 20px;
+
+}
+
+/* =======================
+TOP CARD
+======================= */
+
+.profile-top{
+
+background:
+rgba(255,255,255,0.05);
+
+border:
+1px solid rgba(255,255,255,0.08);
+
+border-radius:30px;
+
+padding:40px;
+
+display:flex;
+align-items:center;
+justify-content:space-between;
+
+margin-bottom:35px;
+
+}
+
+.profile-left{
+
+display:flex;
+align-items:center;
+gap:25px;
+
+}
+
+.profile-img{
+
+width:120px;
+height:120px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+border:5px solid #3b82f6;
+
+}
+
+.profile-name{
+
+font-size:40px;
+font-weight:900;
+
+margin-bottom:8px;
+
+}
+
+.profile-email{
+
+font-size:17px;
+color:#cbd5e1;
+
+}
+
+.edit-btn{
+
+padding:14px 25px;
+
+border:none;
+
+border-radius:14px;
+
+background:
+linear-gradient(
+135deg,
+#2563eb,
+#3b82f6
+);
+
+color:white;
+
+font-size:16px;
+font-weight:700;
+
+cursor:pointer;
+
+}
+
+/* =======================
+STATS
+======================= */
+
+.stats-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:25px;
+
+margin-bottom:35px;
+
+}
+
+.stat-card{
+
+background:
+rgba(255,255,255,0.05);
+
+border:
+1px solid rgba(255,255,255,0.08);
+
+border-radius:25px;
+
+padding:30px;
+
+}
+
+.stat-title{
+
+font-size:15px;
+color:#94a3b8;
+
+margin-bottom:15px;
+
+}
+
+.stat-value{
+
+font-size:40px;
+font-weight:900;
+
+}
+
+.green{
+
+color:#22c55e;
+
+}
+
+.yellow{
+
+color:#facc15;
+
+}
+
+.blue{
+
+color:#3b82f6;
+
+}
+
+/* =======================
+HISTORY
+======================= */
+
+.section-title{
+
+font-size:36px;
+font-weight:900;
+
+margin-bottom:25px;
+
+}
+
+.history-list{
+
+display:flex;
+flex-direction:column;
+gap:20px;
+
+}
+
+.history-card{
+
+background:
+rgba(255,255,255,0.05);
+
+border:
+1px solid rgba(255,255,255,0.08);
+
+border-radius:24px;
+
+padding:25px;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+
+.history-left{
+
+display:flex;
+align-items:center;
+gap:18px;
+
+}
+
+.team-logo{
+
+width:75px;
+height:75px;
+
+border-radius:18px;
+
+background:#111827;
+
+padding:10px;
+
+object-fit:contain;
+
+}
+
+.team-name{
+
+font-size:28px;
+font-weight:800;
+
+margin-bottom:8px;
+
+}
+
+.team-sub{
+
+color:#94a3b8;
+
+}
+
+.history-right{
+
+text-align:right;
+
+}
+
+.spent{
+
+font-size:15px;
+color:#94a3b8;
+
+margin-bottom:8px;
+
+}
+
+.amount{
+
+font-size:36px;
+font-weight:900;
+
+color:#22c55e;
+
+}
+
+/* =======================
+RESPONSIVE
+======================= */
+
+@media(max-width:900px){
+
+.profile-top{
+
+flex-direction:column;
+gap:25px;
+text-align:center;
+
+}
+
+.profile-left{
+
+flex-direction:column;
+
+}
+
+.stats-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.history-card{
+
+flex-direction:column;
+gap:20px;
+text-align:center;
+
+}
+
+.history-left{
+
+flex-direction:column;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- =======================
+NAVBAR
+======================= -->
+
+<div class="navbar">
+
+<h1 class="logo">
+MOCK<span>AUCTION</span>
+</h1>
+
+<div class="nav-right">
+
+<button
+class="play-btn"
+onclick="window.location.href='index.html'">
+
+PLAY AUCTION
+
+</button>
+
+<div class="profile-mini">
+
+<img
+id="mini-photo"
+src=""
+alt="user">
+
+<p id="mini-name">
+User
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- =======================
+PROFILE PAGE
+======================= -->
+
+<div class="profile-page">
+
+<!-- TOP -->
+
+<div class="profile-top">
+
+<div class="profile-left">
+
+<img
+id="user-photo"
+class="profile-img"
+src=""
+alt="user">
+
+<div>
+
+<h1
+id="user-name"
+class="profile-name">
+
+User
+
+</h1>
+
+<p
+id="user-email"
+class="profile-email">
+
+user@gmail.com
+
+</p>
+
+</div>
+
+</div>
+
+<button
+class="edit-btn">
+
+Edit Profile
+
+</button>
+
+</div>
+
+<!-- STATS -->
+
+<div class="stats-grid">
+
+<div class="stat-card">
+
+<p class="stat-title">
+TOTAL AUCTIONS
+</p>
+
+<h1 class="stat-value yellow">
+12
+</h1>
+
+</div>
+
+<div class="stat-card">
+
+<p class="stat-title">
+FAVOURITE TEAM
+</p>
+
+<h1 class="stat-value blue">
+CSK
+</h1>
+
+</div>
+
+<div class="stat-card">
+
+<p class="stat-title">
+TOTAL SPENT
+</p>
+
+<h1 class="stat-value green">
+₹145 Cr
+</h1>
+
+</div>
+
+</div>
+
+<!-- HISTORY -->
+
+<h1 class="section-title">
+Auction History
+</h1>
+
+<div class="history-list">
+
+<!-- CARD -->
+
+<div class="history-card">
+
+<div class="history-left">
+
+<img
+class="team-logo"
+src="https://documents.iplt20.com/ipl/CSK/logos/Logooutline/CSKoutline.png">
+
+<div>
+
+<h2 class="team-name">
+Chennai Super Kings
+</h2>
+
+<p class="team-sub">
+Mega Auction • 2025
+</p>
+
+</div>
+
+</div>
+
+<div class="history-right">
+
+<p class="spent">
+Spent
+</p>
+
+<h1 class="amount">
+₹23.7 Cr
+</h1>
+
+</div>
+
+</div>
+
+<!-- CARD -->
+
+<div class="history-card">
+
+<div class="history-left">
+
+<img
+class="team-logo"
+src="https://documents.iplt20.com/ipl/MI/logos/Logooutline/MIoutline.png">
+
+<div>
+
+<h2 class="team-name">
+Mumbai Indians
+</h2>
+
+<p class="team-sub">
+Mini Auction • 2025
+</p>
+
+</div>
+
+</div>
+
+<div class="history-right">
+
+<p class="spent">
+Spent
+</p>
+
+<h1 class="amount">
+₹18.4 Cr
+</h1>
+
+</div>
+
+</div>
+
+<!-- CARD -->
+
+<div class="history-card">
+
+<div class="history-left">
+
+<img
+class="team-logo"
+src="https://documents.iplt20.com/ipl/RCB/logos/Logooutline/RCBoutline.png">
+
+<div>
+
+<h2 class="team-name">
+Royal Challengers Bengaluru
+</h2>
+
+<p class="team-sub">
+Mock Auction • 2025
+</p>
+
+</div>
+
+</div>
+
+<div class="history-right">
+
+<p class="spent">
+Spent
+</p>
+
+<h1 class="amount">
+₹30.2 Cr
+</h1>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+// =======================
+// GET USER DATA
+// =======================
+
+const name =
+localStorage.getItem(
+"userName"
+);
+
+const email =
+localStorage.getItem(
+"userEmail"
+);
+
+const photo =
+localStorage.getItem(
+"userPhoto"
+);
+
+// =======================
+// CHECK LOGIN
+// =======================
+
+if(!email){
+
+window.location.href =
+"login.html";
+
+}
+
+// =======================
+// SHOW USER
+// =======================
+
+document.getElementById(
+"user-name"
+).innerText =
+name || "User";
+
+document.getElementById(
+"user-email"
+).innerText =
+email || "";
+
+document.getElementById(
+"user-photo"
+).src =
+photo;
+
+document.getElementById(
+"mini-photo"
+).src =
+photo;
+
+document.getElementById(
+"mini-name"
+).innerText =
+name || "User";
+
+</script>
+
+</body>
+
+</html>

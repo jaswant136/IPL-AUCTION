@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>IPL Signup</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="auth-page">
+
+<div class="auth-card">
+
+<h1>
+Create Account
+</h1>
+
+<p>
+Join IPL Auction Simulator
+</p>
+
+<input
+id="signup-username"
+type="text"
+placeholder="Username">
+
+<input
+id="signup-password"
+type="password"
+placeholder="Password">
+
+<button onclick="signup()">
+Create Account
+</button>
+
+<div class="auth-bottom">
+
+Already have account?
+
+<a href="login.html">
+Login
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+async function signup(){
+
+const username =
+document.getElementById(
+"signup-username"
+).value;
+
+const password =
+document.getElementById(
+"signup-password"
+).value;
+
+const response = await fetch(
+"http://127.0.0.1:5000/signup",
+{
+method:"POST",
+headers:{
+"Content-Type":"application/json"
+},
+body:JSON.stringify({
+username,
+password
+})
+}
+);
+
+const data = await response.json();
+
+if(data.success){
+
+alert("Account Created");
+
+window.location.href =
+"login.html";
+
+}else{
+
+alert(data.message);
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>

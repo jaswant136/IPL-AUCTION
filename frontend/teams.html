@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>IPL Teams</title>
+
+<link rel="stylesheet"
+href="./style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="teams-page">
+
+<!-- =========================
+TOP HEADER
+========================= -->
+
+<div class="teams-header-pro">
+
+<div>
+
+<p class="teams-mini-title">
+IPL FRANCHISES
+</p>
+
+<h1 class="teams-big-title">
+Choose Your Team
+</h1>
+
+<p class="teams-desc">
+Manage squads, check purse, build playing XI and monitor auction strategy.
+</p>
+
+<button
+class="back-auction-btn"
+onclick="window.location.href='index.html'">
+
+← Back To Auction
+
+</button>
+
+</div>
+
+<div class="teams-stats-row">
+
+<div class="teams-stat-card">
+
+<p>Total Teams</p>
+
+<h2>10</h2>
+
+</div>
+
+<div class="teams-stat-card live-card">
+
+<p>Live Auction</p>
+
+<h2>ACTIVE</h2>
+
+</div>
+
+<div class="teams-stat-card">
+
+<p>Total Purse</p>
+
+<h2>₹1000 Cr</h2>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- TEAM GRID -->
+
+<div class="franchise-grid">
+
+<!-- CSK -->
+
+<div class="franchise-card csk-card"
+onclick="window.location.href='teams/csk.html'">
+
+<div class="team-top">
+
+<div class="team-circle csk-bg">
+CSK
+</div>
+
+<div class="team-purse"
+id="CSK-purse">
+
+₹100 Cr
+
+</div>
+
+</div>
+
+<h2>
+Chennai Super Kings
+</h2>
+
+<p>
+5 Titles • Strong Core Squad
+</p>
+
+<div class="team-bottom">
+
+<span id="CSK-count">
+0 Players
+</span>
+
+<div class="team-enter">
+Open Squad →
+</div>
+
+</div>
+
+</div>
+
+<!-- MI -->
+
+<div class="franchise-card mi-card"
+onclick="window.location.href='teams/mi.html'">
+
+<div class="team-top">
+
+<div class="team-circle mi-bg">
+MI
+</div>
+
+<div class="team-purse"
+id="MI-purse">
+
+₹100 Cr
+
+</div>
+
+</div>
+
+<h2>
+Mumbai Indians
+</h2>
+
+<p>
+5 Titles • Power Packed Team
+</p>
+
+<div class="team-bottom">
+
+<span id="MI-count">
+0 Players
+</span>
+
+<div class="team-enter">
+Open Squad →
+</div>
+
+</div>
+
+</div>
+
+<!-- RCB -->
+
+<div class="franchise-card rcb-card"
+onclick="window.location.href='teams/rcb.html'">
+
+<div class="team-top">
+
+<div class="team-circle rcb-bg">
+RCB
+</div>
+
+<div class="team-purse"
+id="RCB-purse">
+
+₹100 Cr
+
+</div>
+
+</div>
+
+<h2>
+Royal Challengers Bengaluru
+</h2>
+
+<p>
+Batting Heavy Squad
+</p>
+
+<div class="team-bottom">
+
+<span id="RCB-count">
+0 Players
+</span>
+
+<div class="team-enter">
+Open Squad →
+</div>
+
+</div>
+
+</div>
+
+<!-- KKR -->
+
+<div class="franchise-card kkr-card"
+onclick="window.location.href='teams/kkr.html'">
+
+<div class="team-top">
+
+<div class="team-circle kkr-bg">
+KKR
+</div>
+
+<div class="team-purse"
+id="KKR-purse">
+
+₹100 Cr
+
+</div>
+
+</div>
+
+<h2>
+Kolkata Knight Riders
+</h2>
+
+<p>
+Balanced Championship Team
+</p>
+
+<div class="team-bottom">
+
+<span id="KKR-count">
+0 Players
+</span>
+
+<div class="team-enter">
+Open Squad →
+</div>
+
+</div>
+
+</div>
+
+<!-- SRH -->
+
+<div class="franchise-card srh-card"
+onclick="window.location.href='teams/srh.html'">
+
+<div class="team-top">
+
+<div class="team-circle srh-bg">
+SRH
+</div>
+
+<div class="team-purse"
+id="SRH-purse">
+
+₹100 Cr
+
+</div>
+
+</div>
+
+<h2>
+Sunrisers Hyderabad
+</h2>
+
+<p>
+Aggressive T20 Squad
+</p>
+
+<div class="team-bottom">
+
+<span id="SRH-count">
+0 Players
+</span>
+
+<div class="team-enter">
+Open Squad →
+</div>
+
+</div>
+
+</div>
+
+<!-- RR -->
+
+<div class="franchise-card rr-card"
+onclick="window.location.href='teams/rr.html'">
+
+<div class="team-top">
+
+<div class="team-circle rr-bg">
+RR
+</div>
+
+<div class="team-purse"
+id="RR-purse">
+
+₹100 Cr
+
+</div>
+
+</div>
+
+<h2>
+Rajasthan Royals
+</h2>
+
+<p>
+Young Talented Core
+</p>
+
+<div class="team-bottom">
+
+<span id="RR-count">
+0 Players
+</span>
+
+<div class="team-enter">
+Open Squad →
+</div>
+
+</div>
+
+</div>
+
+<!-- DC -->
+
+<div class="franchise-card dc-card"
+onclick="window.location.href='teams/dc.html'">
+
+<div class="team-top">
+
+<div class="team-circle dc-bg">
+DC
+</div>
+
+<div class="team-purse"
+id="DC-purse">
+
+₹100 Cr
+
+</div>
+
+</div>
+
+<h2>
+Delhi Capitals
+</h2>
+
+<p>
+Explosive Young Squad
+</p>
+
+<div class="team-bottom">
+
+<span id="DC-count">
+0 Players
+</span>
+
+<div class="team-enter">
+Open Squad →
+</div>
+
+</div>
+
+</div>
+
+<!-- GT -->
+
+<div class="franchise-card gt-card"
+onclick="window.location.href='teams/gt.html'">
+
+<div class="team-top">
+
+<div class="team-circle gt-bg">
+GT
+</div>
+
+<div class="team-purse"
+id="GT-purse">
+
+₹100 Cr
+
+</div>
+
+</div>
+
+<h2>
+Gujarat Titans
+</h2>
+
+<p>
+Strong Bowling Attack
+</p>
+
+<div class="team-bottom">
+
+<span id="GT-count">
+0 Players
+</span>
+
+<div class="team-enter">
+Open Squad →
+</div>
+
+</div>
+
+</div>
+
+<!-- PBKS -->
+
+<div class="franchise-card pbks-card"
+onclick="window.location.href='teams/pbks.html'">
+
+<div class="team-top">
+
+<div class="team-circle pbks-bg">
+PBKS
+</div>
+
+<div class="team-purse"
+id="PBKS-purse">
+
+₹100 Cr
+
+</div>
+
+</div>
+
+<h2>
+Punjab Kings
+</h2>
+
+<p>
+Dynamic Batting Lineup
+</p>
+
+<div class="team-bottom">
+
+<span id="PBKS-count">
+0 Players
+</span>
+
+<div class="team-enter">
+Open Squad →
+</div>
+
+</div>
+
+</div>
+
+<!-- LSG -->
+
+<div class="franchise-card lsg-card"
+onclick="window.location.href='teams/lsg.html'">
+
+<div class="team-top">
+
+<div class="team-circle lsg-bg">
+LSG
+</div>
+
+<div class="team-purse"
+id="LSG-purse">
+
+₹100 Cr
+
+</div>
+
+</div>
+
+<h2>
+Lucknow Super Giants
+</h2>
+
+<p>
+Modern T20 Setup
+</p>
+
+<div class="team-bottom">
+
+<span id="LSG-count">
+0 Players
+</span>
+
+<div class="team-enter">
+Open Squad →
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+async function loadTeams(){
+
+try{
+
+const response = await fetch(
+"http://127.0.0.1:5000/teams"
+);
+
+const data =
+await response.json();
+
+for(let team in data){
+
+// UPDATE PURSE
+
+const purseElement =
+document.getElementById(
+`${team}-purse`
+);
+
+if(purseElement){
+
+purseElement.innerText =
+`₹${data[team].purse} Cr`;
+
+}
+
+// UPDATE PLAYER COUNT
+
+const countElement =
+document.getElementById(
+`${team}-count`
+);
+
+if(countElement){
+
+countElement.innerText =
+`${data[team].players.length} Players`;
+
+}
+
+}
+
+}catch(error){
+
+console.log(error);
+
+}
+
+}
+
+loadTeams();
+
+</script>
+
+</body>
+
+</html>

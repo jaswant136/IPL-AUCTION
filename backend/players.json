@@ -1,0 +1,4401 @@
+[
+  {
+    "name":"Jos Buttler",
+    "role":"Wicket Keeper",
+    "pool":"M1",
+    "country":"England",
+    "overseas":true,
+    "basePrice":2,
+    "team":"GT",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Shreyas Iyer",
+    "role":"Batter",
+    "pool":"M1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"PBKS",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Rishabh Pant",
+    "role":"Wicket Keeper",
+    "pool":"M1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"LSG",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Kagiso Rabada",
+    "role":"Bowler",
+    "pool":"M1",
+    "country":"South Africa",
+    "overseas":true,
+    "basePrice":2,
+    "team":"GT",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Arshdeep Singh",
+    "role":"Bowler",
+    "pool":"M1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"PBKS",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Mitchell Starc",
+    "role":"Bowler",
+    "pool":"FA1",
+    "country":"Australia",
+    "overseas":true,
+    "basePrice":2,
+    "team":"DC",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Yuzvendra Chahal",
+    "role":"Spinner",
+    "pool":"M2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"PBKS",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"K.L. Rahul",
+    "role":"Batter",
+    "pool":"M2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"DC",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Mohammad Shami",
+    "role":"Bowler",
+    "pool":"M2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"LSG",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Mohammed Siraj",
+    "role":"Bowler",
+    "pool":"M2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"GT",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Devon Conway",
+    "role":"Wicket Keeper",
+    "pool":"BA1",
+    "country":"New Zealand",
+    "overseas":true,
+    "basePrice":2,
+    "team":"CSK",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Jake Fraser-McGurk",
+    "role":"Batter",
+    "pool":"BA1",
+    "country":"Australia",
+    "overseas":true,
+    "basePrice":2,
+    "team":"DC",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Cameron Green",
+    "role":"All-Rounder",
+    "pool":"BA1",
+    "country":"Australia",
+    "overseas":true,
+    "basePrice":2,
+    "team":"RCB",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Sarfaraz Khan",
+    "role":"Batter",
+    "pool":"BA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.75,
+    "team":"DC",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"David Miller",
+    "role":"Batter",
+    "pool":"M2",
+    "country":"South Africa",
+    "overseas":true,
+    "basePrice":2,
+    "team":"LSG",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Prithvi Shaw",
+    "role":"Batter",
+    "pool":"BA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.75,
+    "team":"DC",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Wanindu Hasaranga",
+    "role":"All-Rounder",
+    "pool":"AL1",
+    "country":"Sri Lanka",
+    "overseas":true,
+    "basePrice":2,
+    "team":"RR",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Deepak Hooda",
+    "role":"All-Rounder",
+    "pool":"AL1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.75,
+    "team":"CSK",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Venkatesh Iyer",
+    "role":"All-Rounder",
+    "pool":"AL1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"KKR",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Liam Livingstone",
+    "role":"All-Rounder",
+    "pool":"M2",
+    "country":"England",
+    "overseas":true,
+    "basePrice":2,
+    "team":"RCB",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Shardul Thakur",
+    "role":"All-Rounder",
+    "pool":"AL1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"CSK",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Chris Woakes",
+    "role":"All-Rounder",
+    "pool":"AL1",
+    "country":"England",
+    "overseas":true,
+    "basePrice":2,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Mitchell Marsh",
+    "role":"All-Rounder",
+    "pool":"AL1",
+    "country":"Australia",
+    "overseas":true,
+    "basePrice":2,
+    "team":"LSG",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Marcus Stoinis",
+    "role":"All-Rounder",
+    "pool":"AL1",
+    "country":"Australia",
+    "overseas":true,
+    "basePrice":2,
+    "team":"PBKS",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Glenn Maxwell",
+    "role":"All-Rounder",
+    "pool":"AL1",
+    "country":"Australia",
+    "overseas":true,
+    "basePrice":2,
+    "team":"PBKS",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Ravichandran Ashwin",
+    "role":"All-Rounder",
+    "pool":"AL1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"CSK",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Harshal Patel",
+    "role":"All-Rounder",
+    "pool":"AL1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"SRH",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Rachin Ravindra",
+    "role":"All-Rounder",
+    "pool":"AL1",
+    "country":"New Zealand",
+    "overseas":true,
+    "basePrice":2,
+    "team":"CSK",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Finn Allen",
+    "role":"Wicket Keeper",
+    "pool":"WK1",
+    "country":"New Zealand",
+    "overseas":true,
+    "basePrice":0.75,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Jonny Bairstow",
+    "role":"Wicket Keeper",
+    "pool":"WK1",
+    "country":"England",
+    "overseas":true,
+    "basePrice":2,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"K.S. Bharat",
+    "role":"Wicket Keeper",
+    "pool":"WK1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.5,
+    "team":"GT",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Quinton De Kock",
+    "role":"Wicket Keeper",
+    "pool":"WK1",
+    "country":"South Africa",
+    "overseas":true,
+    "basePrice":2,
+    "team":"KKR",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Ben Duckett",
+    "role":"Wicket Keeper",
+    "pool":"WK1",
+    "country":"England",
+    "overseas":true,
+    "basePrice":2,
+    "team":"DC",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Rahmanullah Gurbaz",
+    "role":"Wicket Keeper",
+    "pool":"WK1",
+    "country":"Afghanistan",
+    "overseas":true,
+    "basePrice":2,
+    "team":"KKR",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Jamie Smith",
+    "role":"Wicket Keeper",
+    "pool":"WK1",
+    "country":"England",
+    "overseas":true,
+    "basePrice":1,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Philip Salt",
+    "role":"Wicket Keeper",
+    "pool":"WK1",
+    "country":"England",
+    "overseas":true,
+    "basePrice":1.5,
+    "team":"RCB",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Tristan Stubbs",
+    "role":"Wicket Keeper",
+    "pool":"WK1",
+    "country":"South Africa",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"DC",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Ishan Kishan",
+    "role":"Wicket Keeper",
+    "pool":"WK1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"SRH",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Jitesh Sharma",
+    "role":"Wicket Keeper",
+    "pool":"WK1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"RCB",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Ravi Bishnoi",
+    "role":"Spinner",
+    "pool":"SP1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"LSG",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Rahul Chahar",
+    "role":"Spinner",
+    "pool":"SP1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"PBKS",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Akeal Hosein",
+    "role":"Spinner",
+    "pool":"SP1",
+    "country":"West Indies",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"SRH",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Mujeeb Ur Rahman",
+    "role":"Spinner",
+    "pool":"SP1",
+    "country":"Afghanistan",
+    "overseas":true,
+    "basePrice":2,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Maheesh Theekshana",
+    "role":"Spinner",
+    "pool":"SP1",
+    "country":"Sri Lanka",
+    "overseas":true,
+    "basePrice":2,
+    "team":"RR",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Noor Ahmad",
+    "role":"Spinner",
+    "pool":"SP1",
+    "country":"Afghanistan",
+    "overseas":true,
+    "basePrice":2,
+    "team":"CSK",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Adil Rashid",
+    "role":"Spinner",
+    "pool":"SP2",
+    "country":"England",
+    "overseas":true,
+    "basePrice":2,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Ish Sodhi",
+    "role":"Spinner",
+    "pool":"SP2",
+    "country":"New Zealand",
+    "overseas":true,
+    "basePrice":0.75,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Keshav Maharaj",
+    "role":"Spinner",
+    "pool":"SP2",
+    "country":"South Africa",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Tabraiz Shamsi",
+    "role":"Spinner",
+    "pool":"SP2",
+    "country":"South Africa",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Reeza Hendricks",
+    "role":"Batter",
+    "pool":"BA3",
+    "country":"South Africa",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Brandon King",
+    "role":"Batter",
+    "pool":"BA3",
+    "country":"West Indies",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Najibullah Zadran",
+    "role":"Batter",
+    "pool":"BA3",
+    "country":"Afghanistan",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Rassie van der Dussen",
+    "role":"Batter",
+    "pool":"BA3",
+    "country":"South Africa",
+    "overseas":true,
+    "basePrice":2,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Colin Munro",
+    "role":"Batter",
+    "pool":"BA3",
+    "country":"New Zealand",
+    "overseas":true,
+    "basePrice":1.5,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"James Vince",
+    "role":"Batter",
+    "pool":"BA2",
+    "country":"England",
+    "overseas":true,
+    "basePrice":2,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Jason Roy",
+    "role":"Batter",
+    "pool":"BA2",
+    "country":"England",
+    "overseas":true,
+    "basePrice":2,
+    "team":"KKR",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Kane Williamson",
+    "role":"Batter",
+    "pool":"BA2",
+    "country":"New Zealand",
+    "overseas":true,
+    "basePrice":2,
+    "team":"GT",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Kyle Mayers",
+    "role":"All-Rounder",
+    "pool":"AL3",
+    "country":"West Indies",
+    "overseas":true,
+    "basePrice":1.5,
+    "team":"LSG",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Jimmy Neesham",
+    "role":"All-Rounder",
+    "pool":"AL3",
+    "country":"New Zealand",
+    "overseas":true,
+    "basePrice":1.5,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Keemo Paul",
+    "role":"All-Rounder",
+    "pool":"AL3",
+    "country":"West Indies",
+    "overseas":true,
+    "basePrice":0.75,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Odean Smith",
+    "role":"All-Rounder",
+    "pool":"AL3",
+    "country":"West Indies",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"GT",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Daniel Sams",
+    "role":"All-Rounder",
+    "pool":"AL3",
+    "country":"Australia",
+    "overseas":true,
+    "basePrice":1.5,
+    "team":"LSG",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Romario Shepherd",
+    "role":"All-Rounder",
+    "pool":"AL3",
+    "country":"West Indies",
+    "overseas":true,
+    "basePrice":1.5,
+    "team":"RCB",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"David Wiese",
+    "role":"All-Rounder",
+    "pool":"AL3",
+    "country":"Namibia",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Sandeep Sharma",
+    "role":"Bowler",
+    "pool":"FA3",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.5,
+    "team":"RR",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Tushar Deshpande",
+    "role":"Bowler",
+    "pool":"FA3",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.5,
+    "team":"RR",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Mohit Sharma",
+    "role":"Bowler",
+    "pool":"FA3",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.5,
+    "team":"DC",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Khaleel Ahmed",
+    "role":"Bowler",
+    "pool":"FA3",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.75,
+    "team":"CSK",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Umesh Yadav",
+    "role":"Bowler",
+    "pool":"FA2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"KKR",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Jhye Richardson",
+    "role":"Bowler",
+    "pool":"FA2",
+    "country":"Australia",
+    "overseas":true,
+    "basePrice":1.5,
+    "team":"DC",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Nuwan Thushara",
+    "role":"Bowler",
+    "pool":"FA2",
+    "country":"Sri Lanka",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"RCB",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Alzarri Joseph",
+    "role":"Bowler",
+    "pool":"FA2",
+    "country":"West Indies",
+    "overseas":true,
+    "basePrice":1,
+    "team":"RCB",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Dilshan Madushanka",
+    "role":"Bowler",
+    "pool":"FA2",
+    "country":"Sri Lanka",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"MI",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Lockie Ferguson",
+    "role":"Bowler",
+    "pool":"FA2",
+    "country":"New Zealand",
+    "overseas":true,
+    "basePrice":2,
+    "team":"PBKS",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Daryl Mitchell",
+    "role":"All-Rounder",
+    "pool":"AL1",
+    "country":"New Zealand",
+    "overseas":true,
+    "basePrice":1,
+    "team":"CSK",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Azmatullah Omarzai",
+    "role":"All-Rounder",
+    "pool":"AL1",
+    "country":"Afghanistan",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"PBKS",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Pat Cummins",
+    "role":"All-Rounder",
+    "pool":"AL1",
+    "country":"Australia",
+    "overseas":true,
+    "basePrice":2,
+    "team":"SRH",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Gerald Coetzee",
+    "role":"All-Rounder",
+    "pool":"AL1",
+    "country":"South Africa",
+    "overseas":true,
+    "basePrice":2,
+    "team":"GT",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Akash Deep",
+    "role":"Bowler",
+    "pool":"FA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":1,
+    "team":"LSG",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Jacob Duffy",
+    "role":"Bowler",
+    "pool":"FA1",
+    "country":"New Zealand",
+    "overseas":true,
+    "basePrice":1,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Fazalhaq Farooqi",
+    "role":"Bowler",
+    "pool":"FA1",
+    "country":"Afghanistan",
+    "overseas":true,
+    "basePrice":1,
+    "team":"SRH",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Matt Henry",
+    "role":"Bowler",
+    "pool":"FA1",
+    "country":"New Zealand",
+    "overseas":true,
+    "basePrice":0.75,
+    "team":"LSG",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Spencer Johnson",
+    "role":"Bowler",
+    "pool":"FA1",
+    "country":"Australia",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"KKR",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Shivam Mavi",
+    "role":"Bowler",
+    "pool":"FA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.5,
+    "team":"LSG",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Anrich Nortje",
+    "role":"Bowler",
+    "pool":"FA1",
+    "country":"South Africa",
+    "overseas":true,
+    "basePrice":2,
+    "team":"KKR",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Matheesha Pathirana",
+    "role":"Bowler",
+    "pool":"FA1",
+    "country":"Sri Lanka",
+    "overseas":true,
+    "basePrice":1,
+    "team":"CSK",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Josh Hazlewood",
+    "role":"Bowler",
+    "pool":"FA1",
+    "country":"Australia",
+    "overseas":true,
+    "basePrice":2,
+    "team":"RCB",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Trent Boult",
+    "role":"Bowler",
+    "pool":"FA1",
+    "country":"New Zealand",
+    "overseas":true,
+    "basePrice":2,
+    "team":"MI",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Avesh Khan",
+    "role":"Bowler",
+    "pool":"FA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"RR",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Prasidh Krishna",
+    "role":"Bowler",
+    "pool":"FA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"GT",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"T. Natarajan",
+    "role":"Bowler",
+    "pool":"FA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"DC",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Tom Kohler-Cadmore",
+    "role":"Wicket Keeper",
+    "pool":"WK2",
+    "country":"England",
+    "overseas":true,
+    "basePrice":0.4,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Sam Billings",
+    "role":"Wicket Keeper",
+    "pool":"WK2",
+    "country":"England",
+    "overseas":true,
+    "basePrice":1,
+    "team":"KKR",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Josh Inglis",
+    "role":"Wicket Keeper",
+    "pool":"WK2",
+    "country":"Australia",
+    "overseas":true,
+    "basePrice":2,
+    "team":"PBKS",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Kusal Mendis",
+    "role":"Wicket Keeper",
+    "pool":"WK1",
+    "country":"Sri Lanka",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },  
+
+  {
+    "name":"Harry Brook",
+    "role":"Batter",
+    "pool":"BA1",
+    "country":"England",
+    "overseas":true,
+    "basePrice":2,
+    "team":"DC",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Travis Head",
+    "role":"Batter",
+    "pool":"BA1",
+    "country":"Australia",
+    "overseas":true,
+    "basePrice":2,
+    "team":"SRH",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Manish Pandey",
+    "role":"Batter",
+    "pool":"BA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.5,
+    "team":"KKR",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Karun Nair",
+    "role":"Batter",
+    "pool":"BA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.5,
+    "team":"DC",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Rovman Powell",
+    "role":"Batter",
+    "pool":"BA1",
+    "country":"West Indies",
+    "overseas":true,
+    "basePrice":1,
+    "team":"KKR",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Steve Smith",
+    "role":"Batter",
+    "pool":"BA1",
+    "country":"Australia",
+    "overseas":true,
+    "basePrice":2,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Pat Cummins",
+    "role":"All-Rounder",
+    "pool":"AL1",
+    "country":"Australia",
+    "overseas":true,
+    "basePrice":2,
+    "team":"SRH",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Daryl Mitchell",
+    "role":"All-Rounder",
+    "pool":"AL1",
+    "country":"New Zealand",
+    "overseas":true,
+    "basePrice":1,
+    "team":"CSK",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Azmatullah Omarzai",
+    "role":"All-Rounder",
+    "pool":"AL1",
+    "country":"Afghanistan",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"PBKS",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Shardul Thakur",
+    "role":"All-Rounder",
+    "pool":"AL1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"CSK",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Chris Woakes",
+    "role":"All-Rounder",
+    "pool":"AL1",
+    "country":"England",
+    "overseas":true,
+    "basePrice":2,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Mitchell Marsh",
+    "role":"All-Rounder",
+    "pool":"AL1",
+    "country":"Australia",
+    "overseas":true,
+    "basePrice":2,
+    "team":"LSG",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Marcus Stoinis",
+    "role":"All-Rounder",
+    "pool":"AL1",
+    "country":"Australia",
+    "overseas":true,
+    "basePrice":2,
+    "team":"PBKS",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Glenn Maxwell",
+    "role":"All-Rounder",
+    "pool":"AL1",
+    "country":"Australia",
+    "overseas":true,
+    "basePrice":2,
+    "team":"PBKS",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Ravichandran Ashwin",
+    "role":"All-Rounder",
+    "pool":"AL1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"CSK",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Harshal Patel",
+    "role":"All-Rounder",
+    "pool":"AL1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"SRH",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Gerald Coetzee",
+    "role":"Bowler",
+    "pool":"FA1",
+    "country":"South Africa",
+    "overseas":true,
+    "basePrice":2,
+    "team":"GT",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Akash Deep",
+    "role":"Bowler",
+    "pool":"FA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":1,
+    "team":"LSG",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Jacob Duffy",
+    "role":"Bowler",
+    "pool":"FA1",
+    "country":"New Zealand",
+    "overseas":true,
+    "basePrice":1,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Fazalhaq Farooqi",
+    "role":"Bowler",
+    "pool":"FA1",
+    "country":"Afghanistan",
+    "overseas":true,
+    "basePrice":1,
+    "team":"SRH",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Matt Henry",
+    "role":"Bowler",
+    "pool":"FA1",
+    "country":"New Zealand",
+    "overseas":true,
+    "basePrice":0.75,
+    "team":"LSG",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Spencer Johnson",
+    "role":"Bowler",
+    "pool":"FA1",
+    "country":"Australia",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"KKR",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Shivam Mavi",
+    "role":"Bowler",
+    "pool":"FA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.5,
+    "team":"LSG",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Anrich Nortje",
+    "role":"Bowler",
+    "pool":"FA1",
+    "country":"South Africa",
+    "overseas":true,
+    "basePrice":2,
+    "team":"KKR",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Matheesha Pathirana",
+    "role":"Bowler",
+    "pool":"FA1",
+    "country":"Sri Lanka",
+    "overseas":true,
+    "basePrice":1,
+    "team":"CSK",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Ben Sears",
+    "role":"Bowler",
+    "pool":"FA5",
+    "country":"New Zealand",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Blessing Muzarabani",
+    "role":"Bowler",
+    "pool":"FA5",
+    "country":"Zimbabwe",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Kyle Verreynne",
+    "role":"Wicket Keeper",
+    "pool":"WK2",
+    "country":"South Africa",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"James Vince",
+    "role":"Batter",
+    "pool":"BA2",
+    "country":"England",
+    "overseas":true,
+    "basePrice":2,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Jason Roy",
+    "role":"Batter",
+    "pool":"BA2",
+    "country":"England",
+    "overseas":true,
+    "basePrice":2,
+    "team":"KKR",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Tom Kohler-Cadmore",
+    "role":"Wicket Keeper",
+    "pool":"WK2",
+    "country":"England",
+    "overseas":true,
+    "basePrice":0.4,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Sam Billings",
+    "role":"Wicket Keeper",
+    "pool":"WK2",
+    "country":"England",
+    "overseas":true,
+    "basePrice":1,
+    "team":"KKR",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Josh Inglis",
+    "role":"Wicket Keeper",
+    "pool":"WK2",
+    "country":"Australia",
+    "overseas":true,
+    "basePrice":2,
+    "team":"PBKS",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Alzarri Joseph",
+    "role":"Bowler",
+    "pool":"FA2",
+    "country":"West Indies",
+    "overseas":true,
+    "basePrice":1,
+    "team":"RCB",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Dilshan Madushanka",
+    "role":"Bowler",
+    "pool":"FA2",
+    "country":"Sri Lanka",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"MI",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Lockie Ferguson",
+    "role":"Bowler",
+    "pool":"FA2",
+    "country":"New Zealand",
+    "overseas":true,
+    "basePrice":2,
+    "team":"PBKS",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Umesh Yadav",
+    "role":"Bowler",
+    "pool":"FA2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"KKR",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Jhye Richardson",
+    "role":"Bowler",
+    "pool":"FA2",
+    "country":"Australia",
+    "overseas":true,
+    "basePrice":1.5,
+    "team":"DC",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Nuwan Thushara",
+    "role":"Bowler",
+    "pool":"FA2",
+    "country":"Sri Lanka",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"RCB",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Tabraiz Shamsi",
+    "role":"Spinner",
+    "pool":"SP2",
+    "country":"South Africa",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Matt Henry",
+    "role":"Bowler",
+    "pool":"FA1",
+    "country":"New Zealand",
+    "overseas":true,
+    "basePrice":0.75,
+    "team":"LSG",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Spencer Johnson",
+    "role":"Bowler",
+    "pool":"FA1",
+    "country":"Australia",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"KKR",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Shivam Mavi",
+    "role":"Bowler",
+    "pool":"FA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.5,
+    "team":"LSG",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Anrich Nortje",
+    "role":"Bowler",
+    "pool":"FA1",
+    "country":"South Africa",
+    "overseas":true,
+    "basePrice":2,
+    "team":"KKR",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Matheesha Pathirana",
+    "role":"Bowler",
+    "pool":"FA1",
+    "country":"Sri Lanka",
+    "overseas":true,
+    "basePrice":1,
+    "team":"CSK",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Ben Sears",
+    "role":"Bowler",
+    "pool":"FA5",
+    "country":"New Zealand",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Blessing Muzarabani",
+    "role":"Bowler",
+    "pool":"FA5",
+    "country":"Zimbabwe",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Kyle Verreynne",
+    "role":"Wicket Keeper",
+    "pool":"WK2",
+    "country":"South Africa",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"James Vince",
+    "role":"Batter",
+    "pool":"BA2",
+    "country":"England",
+    "overseas":true,
+    "basePrice":2,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Jason Roy",
+    "role":"Batter",
+    "pool":"BA2",
+    "country":"England",
+    "overseas":true,
+    "basePrice":2,
+    "team":"KKR",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Tom Kohler-Cadmore",
+    "role":"Wicket Keeper",
+    "pool":"WK2",
+    "country":"England",
+    "overseas":true,
+    "basePrice":0.4,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Sam Billings",
+    "role":"Wicket Keeper",
+    "pool":"WK2",
+    "country":"England",
+    "overseas":true,
+    "basePrice":1,
+    "team":"KKR",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Josh Inglis",
+    "role":"Wicket Keeper",
+    "pool":"WK2",
+    "country":"Australia",
+    "overseas":true,
+    "basePrice":2,
+    "team":"PBKS",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Alzarri Joseph",
+    "role":"Bowler",
+    "pool":"FA2",
+    "country":"West Indies",
+    "overseas":true,
+    "basePrice":1,
+    "team":"RCB",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Dilshan Madushanka",
+    "role":"Bowler",
+    "pool":"FA2",
+    "country":"Sri Lanka",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"MI",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Lockie Ferguson",
+    "role":"Bowler",
+    "pool":"FA2",
+    "country":"New Zealand",
+    "overseas":true,
+    "basePrice":2,
+    "team":"PBKS",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Umesh Yadav",
+    "role":"Bowler",
+    "pool":"FA2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"KKR",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Jhye Richardson",
+    "role":"Bowler",
+    "pool":"FA2",
+    "country":"Australia",
+    "overseas":true,
+    "basePrice":1.5,
+    "team":"DC",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Nuwan Thushara",
+    "role":"Bowler",
+    "pool":"FA2",
+    "country":"Sri Lanka",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"RCB",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Tabraiz Shamsi",
+    "role":"Spinner",
+    "pool":"SP2",
+    "country":"South Africa",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+  
+  {
+    "name":"Ish Sodhi",
+    "role":"Spinner",
+    "pool":"SP2",
+    "country":"New Zealand",
+    "overseas":true,
+    "basePrice":0.75,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Keshav Maharaj",
+    "role":"Spinner",
+    "pool":"SP2",
+    "country":"South Africa",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Adil Rashid",
+    "role":"Spinner",
+    "pool":"SP2",
+    "country":"England",
+    "overseas":true,
+    "basePrice":2,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Reeza Hendricks",
+    "role":"Batter",
+    "pool":"BA3",
+    "country":"South Africa",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Brandon King",
+    "role":"Batter",
+    "pool":"BA3",
+    "country":"West Indies",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Najibullah Zadran",
+    "role":"Batter",
+    "pool":"BA3",
+    "country":"Afghanistan",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Rassie van der Dussen",
+    "role":"Batter",
+    "pool":"BA3",
+    "country":"South Africa",
+    "overseas":true,
+    "basePrice":2,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Colin Munro",
+    "role":"Batter",
+    "pool":"BA3",
+    "country":"New Zealand",
+    "overseas":true,
+    "basePrice":1.5,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Kyle Mayers",
+    "role":"All-Rounder",
+    "pool":"AL3",
+    "country":"West Indies",
+    "overseas":true,
+    "basePrice":1.5,
+    "team":"LSG",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Jimmy Neesham",
+    "role":"All-Rounder",
+    "pool":"AL3",
+    "country":"New Zealand",
+    "overseas":true,
+    "basePrice":1.5,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Angkrish Raghuvanshi",
+    "role":"Batter",
+    "pool":"UBA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"KKR",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Nehal Wadhera",
+    "role":"Batter",
+    "pool":"UBA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"PBKS",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Atharva Taide",
+    "role":"Batter",
+    "pool":"UBA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"SRH",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Abhinav Manohar",
+    "role":"Batter",
+    "pool":"UBA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"SRH",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Anmolpreet Singh",
+    "role":"Batter",
+    "pool":"UBA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"SRH",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Yash Dhull",
+    "role":"Batter",
+    "pool":"UBA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"DC",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Sameer Rizvi",
+    "role":"Batter",
+    "pool":"UBA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"CSK",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Swastik Chikara",
+    "role":"Batter",
+    "pool":"UBA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Ashutosh Sharma",
+    "role":"All-Rounder",
+    "pool":"UAL1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"DC",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Shahrukh Khan",
+    "role":"All-Rounder",
+    "pool":"UAL1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.4,
+    "team":"GT",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Madhaw Tiwan",
+    "role":"All-Rounder",
+    "pool":"UAL14",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Kamal Tripathi",
+    "role":"All-Rounder",
+    "pool":"UAL14",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Prashant Chauhan",
+    "role":"All-Rounder",
+    "pool":"UAL15",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Yash Dabas",
+    "role":"All-Rounder",
+    "pool":"UAL15",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Dhruv Kaushik",
+    "role":"All-Rounder",
+    "pool":"UAL15",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Rajesh Mohanty",
+    "role":"Bowler",
+    "pool":"UFA6",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Rasikh Salam",
+    "role":"Bowler",
+    "pool":"UFA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"DC",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Kartik Tyagi",
+    "role":"Bowler",
+    "pool":"UFA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"SRH",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Ishan Porel",
+    "role":"Bowler",
+    "pool":"UFA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"PBKS",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Sushant Mishra",
+    "role":"Bowler",
+    "pool":"UFA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Kumar Kushagra",
+    "role":"Wicket Keeper",
+    "pool":"UWK1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"DC",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Robin Minz",
+    "role":"Wicket Keeper",
+    "pool":"UWK1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"MI",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Sumit Kumar",
+    "role":"Wicket Keeper",
+    "pool":"UWK1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"DC",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Aryan Juyal",
+    "role":"Wicket Keeper",
+    "pool":"UWK1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Ricky Bhui",
+    "role":"Wicket Keeper",
+    "pool":"UWK1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"DC",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Upendra Yadav",
+    "role":"Wicket Keeper",
+    "pool":"UWK1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"SRH",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Manav Suthar",
+    "role":"Spinner",
+    "pool":"USP1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"GT",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Suyash Sharma",
+    "role":"Spinner",
+    "pool":"USP1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"RCB",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Shiva Singh",
+    "role":"Spinner",
+    "pool":"USP1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Murugan Ashwin",
+    "role":"Spinner",
+    "pool":"USP1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"RR",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+  
+  {
+    "name":"Pulkit Narang",
+    "role":"Spinner",
+    "pool":"USP1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Shreyas Gurav",
+    "role":"Spinner",
+    "pool":"USP2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Vishu Kashyap",
+    "role":"Spinner",
+    "pool":"USP2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Midhun Sudhesan",
+    "role":"Spinner",
+    "pool":"USP2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Izharulhuq Naveed",
+    "role":"Spinner",
+    "pool":"USP2",
+    "country":"Afghanistan",
+    "overseas":true,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Bhuwan Rohilla",
+    "role":"Spinner",
+    "pool":"USP2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Shivam Sharma",
+    "role":"Spinner",
+    "pool":"USP2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Ramandeep Singh",
+    "role":"All-Rounder",
+    "pool":"UAL1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"KKR",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Arshin Kulkarni",
+    "role":"All-Rounder",
+    "pool":"UAL1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"LSG",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Tanush Kotian",
+    "role":"All-Rounder",
+    "pool":"UAL1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"RR",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Naman Dhir",
+    "role":"All-Rounder",
+    "pool":"UAL2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"MI",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Mahipal Lomror",
+    "role":"All-Rounder",
+    "pool":"UAL2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"RCB",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Saurav Chauhan",
+    "role":"Batter",
+    "pool":"UBA2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"RCB",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Vishnu Vinod",
+    "role":"Wicket Keeper",
+    "pool":"UWK2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"PBKS",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Sheldon Jackson",
+    "role":"Wicket Keeper",
+    "pool":"UWK2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"KKR",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Luvnith Sisodia",
+    "role":"Wicket Keeper",
+    "pool":"UWK2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"KKR",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"G. Ajitesh",
+    "role":"Wicket Keeper",
+    "pool":"UWK2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Hrithik Shokeen",
+    "role":"All-Rounder",
+    "pool":"UAL3",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"MI",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Ripal Patel",
+    "role":"All-Rounder",
+    "pool":"UAL3",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"DC",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Lalit Yadav",
+    "role":"All-Rounder",
+    "pool":"UAL3",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"DC",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+  
+  {
+    "name":"Angkrish Raghuvanshi",
+    "role":"Batter",
+    "pool":"UBA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"KKR",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Nehal Wadhera",
+    "role":"Batter",
+    "pool":"UBA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"PBKS",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Atharva Taide",
+    "role":"Batter",
+    "pool":"UBA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"SRH",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Abhinav Manohar",
+    "role":"Batter",
+    "pool":"UBA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"SRH",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Anmolpreet Singh",
+    "role":"Batter",
+    "pool":"UBA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"SRH",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Yash Dhull",
+    "role":"Batter",
+    "pool":"UBA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"DC",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Sameer Rizvi",
+    "role":"Batter",
+    "pool":"UBA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"CSK",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Swastik Chikara",
+    "role":"Batter",
+    "pool":"UBA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Ashutosh Sharma",
+    "role":"All-Rounder",
+    "pool":"UAL1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"DC",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Shahrukh Khan",
+    "role":"All-Rounder",
+    "pool":"UAL1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.4,
+    "team":"GT",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Ramandeep Singh",
+    "role":"All-Rounder",
+    "pool":"UAL1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"KKR",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Arshin Kulkarni",
+    "role":"All-Rounder",
+    "pool":"UAL1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"LSG",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Vivrant Sharma",
+    "role":"All-Rounder",
+    "pool":"UAL1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"SRH",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Atit Sheth",
+    "role":"All-Rounder",
+    "pool":"UAL1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Kumar Kushagra",
+    "role":"Wicket Keeper",
+    "pool":"UWK1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"DC",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Robin Minz",
+    "role":"Wicket Keeper",
+    "pool":"UWK1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"MI",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Sumit Kumar",
+    "role":"Wicket Keeper",
+    "pool":"UWK1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"DC",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Aryan Juyal",
+    "role":"Wicket Keeper",
+    "pool":"UWK1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Ricky Bhui",
+    "role":"Wicket Keeper",
+    "pool":"UWK1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"DC",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Upendra Yadav",
+    "role":"Wicket Keeper",
+    "pool":"UWK1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"SRH",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+  
+  {
+    "name":"Rasikh Salam",
+    "role":"Bowler",
+    "pool":"UFA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"DC",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Kartik Tyagi",
+    "role":"Bowler",
+    "pool":"UFA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"SRH",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Sushant Mishra",
+    "role":"Bowler",
+    "pool":"UFA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Kuldip Sen",
+    "role":"Bowler",
+    "pool":"UFA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"PBKS",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"KM Asif",
+    "role":"Bowler",
+    "pool":"UFA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"RR",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Akash Singh",
+    "role":"Bowler",
+    "pool":"UFA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"CSK",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Prithvi Raj Yarra",
+    "role":"Bowler",
+    "pool":"UFA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"CSK",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Ishan Porel",
+    "role":"Bowler",
+    "pool":"UFA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"PBKS",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Manav Suthar",
+    "role":"Spinner",
+    "pool":"USP1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"GT",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Suyash Sharma",
+    "role":"Spinner",
+    "pool":"USP1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"RCB",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Madhaw Tiwan",
+    "role":"All-Rounder",
+    "pool":"UAL14",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Kamal Tripathi",
+    "role":"All-Rounder",
+    "pool":"UAL14",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Prashant Chauhan",
+    "role":"All-Rounder",
+    "pool":"UAL15",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Yash Dabas",
+    "role":"All-Rounder",
+    "pool":"UAL15",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Dhruv Kaushik",
+    "role":"All-Rounder",
+    "pool":"UAL15",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Rajesh Mohanty",
+    "role":"Bowler",
+    "pool":"UFA6",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Sakib Hussain",
+    "role":"Bowler",
+    "pool":"UFA6",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"KKR",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Mohammed Arshad Khan",
+    "role":"All-Rounder",
+    "pool":"UAL3",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"LSG",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Digvijay Deshmukh",
+    "role":"All-Rounder",
+    "pool":"UAL3",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Musheer Khan",
+    "role":"All-Rounder",
+    "pool":"UAL4",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"PBKS",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+  
+  {
+    "name":"Baba Indrajith",
+    "role":"Wicket Keeper",
+    "pool":"UWK2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"KKR",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Anuj Rawat",
+    "role":"Wicket Keeper",
+    "pool":"UWK2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"RCB",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Donovan Ferreira",
+    "role":"Wicket Keeper",
+    "pool":"UWK2",
+    "country":"South Africa",
+    "overseas":true,
+    "basePrice":0.2,
+    "team":"RR",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Shariz Ahmad",
+    "role":"Spinner",
+    "pool":"USP2",
+    "country":"Afghanistan",
+    "overseas":true,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Allah Ghazanfar",
+    "role":"Spinner",
+    "pool":"USP2",
+    "country":"Afghanistan",
+    "overseas":true,
+    "basePrice":0.2,
+    "team":"MI",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Waqar Salamkheil",
+    "role":"Spinner",
+    "pool":"SP1",
+    "country":"Afghanistan",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Akeal Hosein",
+    "role":"Spinner",
+    "pool":"SP1",
+    "country":"West Indies",
+    "overseas":true,
+    "basePrice":0.5,
+    "team":"SRH",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Mujeeb Ur Rahman",
+    "role":"Spinner",
+    "pool":"SP1",
+    "country":"Afghanistan",
+    "overseas":true,
+    "basePrice":2,
+    "team":"",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Noor Ahmad",
+    "role":"Spinner",
+    "pool":"SP1",
+    "country":"Afghanistan",
+    "overseas":true,
+    "basePrice":2,
+    "team":"CSK",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Adam Zampa",
+    "role":"Spinner",
+    "pool":"SP1",
+    "country":"Australia",
+    "overseas":true,
+    "basePrice":2,
+    "team":"RR",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Ravi Teja",
+    "role":"All-Rounder",
+    "pool":"UAL5",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"SRH",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Ajay Mandal",
+    "role":"All-Rounder",
+    "pool":"UAL5",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"CSK",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Sanjay Yadav",
+    "role":"All-Rounder",
+    "pool":"UAL5",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"MI",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Tanush Kotian",
+    "role":"All-Rounder",
+    "pool":"UAL5",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"RR",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Kuldip Yadav",
+    "role":"Bowler",
+    "pool":"UFA3",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"RR",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Vidwath Kaverappa",
+    "role":"Bowler",
+    "pool":"UFA3",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"PBKS",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Ishan Porel",
+    "role":"Bowler",
+    "pool":"UFA3",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"PBKS",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Simarjeet Singh",
+    "role":"Bowler",
+    "pool":"UFA3",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"SRH",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Basil Thampi",
+    "role":"Bowler",
+    "pool":"UFA4",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Akash Madhwal",
+    "role":"Bowler",
+    "pool":"UFA4",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"MI",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+  
+  {
+    "name":"Shiva Singh",
+    "role":"Spinner",
+    "pool":"USP1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Murugan Ashwin",
+    "role":"Spinner",
+    "pool":"USP1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"RR",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Pulkit Narang",
+    "role":"Spinner",
+    "pool":"USP1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Shreyas Gurav",
+    "role":"Spinner",
+    "pool":"USP2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Vishu Kashyap",
+    "role":"Spinner",
+    "pool":"USP2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Midhun Sudhesan",
+    "role":"Spinner",
+    "pool":"USP2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Izharulhuq Naveed",
+    "role":"Spinner",
+    "pool":"USP2",
+    "country":"Afghanistan",
+    "overseas":true,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Bhuwan Rohilla",
+    "role":"Spinner",
+    "pool":"USP2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Shivam Sharma",
+    "role":"Spinner",
+    "pool":"USP2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Shubhang Hegde",
+    "role":"Spinner",
+    "pool":"USP3",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Karan Sharma",
+    "role":"Batter",
+    "pool":"UBA3",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"LSG",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Priyam Garg",
+    "role":"Batter",
+    "pool":"UBA3",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Ripal Patel",
+    "role":"All-Rounder",
+    "pool":"UAL3",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"DC",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Lalit Yadav",
+    "role":"All-Rounder",
+    "pool":"UAL3",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"DC",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Hrithik Shokeen",
+    "role":"All-Rounder",
+    "pool":"UAL3",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"MI",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Abdul Samad",
+    "role":"All-Rounder",
+    "pool":"UAL2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"LSG",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Vivrant Sharma",
+    "role":"All-Rounder",
+    "pool":"UAL2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"SRH",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Mahipal Lomror",
+    "role":"All-Rounder",
+    "pool":"UAL2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"RCB",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Naman Dhir",
+    "role":"All-Rounder",
+    "pool":"UAL2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"MI",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Harpreet Brar",
+    "role":"All-Rounder",
+    "pool":"UAL2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"PBKS",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+  
+  {
+    "name":"Sarfaraz Khan",
+    "role":"Batter",
+    "pool":"UBA2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"DC",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Vishnu Vinod",
+    "role":"Wicket Keeper",
+    "pool":"UWK2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"PBKS",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Sheldon Jackson",
+    "role":"Wicket Keeper",
+    "pool":"UWK2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"KKR",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Luvnith Sisodia",
+    "role":"Wicket Keeper",
+    "pool":"UWK2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"KKR",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"G. Ajitesh",
+    "role":"Wicket Keeper",
+    "pool":"UWK2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Urvil Patel",
+    "role":"Wicket Keeper",
+    "pool":"UWK2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"GT",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Saurav Chauhan",
+    "role":"Batter",
+    "pool":"UBA2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"RCB",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Kunal Singh Rathore",
+    "role":"Wicket Keeper",
+    "pool":"UWK2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"RR",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Pratham Singh",
+    "role":"Batter",
+    "pool":"UBA2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"KKR",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Shubham Dubey",
+    "role":"Batter",
+    "pool":"UBA2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"RR",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Himanshu Sharma",
+    "role":"Spinner",
+    "pool":"USP1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"RCB",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Tejas Baroka",
+    "role":"Spinner",
+    "pool":"USP2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Yudhvir Singh Charak",
+    "role":"Bowler",
+    "pool":"UFA2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"LSG",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Vyshak Vijaykumar",
+    "role":"Bowler",
+    "pool":"UFA2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"PBKS",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Yash Dayal",
+    "role":"Bowler",
+    "pool":"UFA2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"RCB",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Vaibhav Arora",
+    "role":"Bowler",
+    "pool":"UFA2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"KKR",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Sandeep Warrier",
+    "role":"Bowler",
+    "pool":"UFA2",
+    "country":"India",
+    "overseas":false,
+    "basePrice":0.2,
+    "team":"MI",
+    "capped":false,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Mukesh Kumar",
+    "role":"Bowler",
+    "pool":"FA3",
+    "country":"India",
+    "overseas":false,
+    "basePrice":1,
+    "team":"DC",
+    "capped":true,
+    "sold":false,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+  
+  {
+    "name":"Virat Kohli",
+    "role":"Batter",
+    "pool":"MA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"RCB",
+    "capped":true,
+    "sold":true,
+    "image":"https://documents.iplt20.com/ipl/IPLHeadshot2025/2.png"
+  },
+
+  {
+    "name":"Jasprit Bumrah",
+    "role":"Bowler",
+    "pool":"MA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"MI",
+    "capped":true,
+    "sold":true,
+    "image":"https://documents.iplt20.com/ipl/IPLHeadshot2025/9.png"
+  },
+
+  {
+    "name":"Rohit Sharma",
+    "role":"Batter",
+    "pool":"MA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"MI",
+    "capped":true,
+    "sold":true,
+    "image":"https://documents.iplt20.com/ipl/IPLHeadshot2025/6.png"
+  },
+
+  {
+    "name":"MS Dhoni",
+    "role":"Wicket Keeper",
+    "pool":"MA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"CSK",
+    "capped":true,
+    "sold":true,
+    "image":"https://documents.iplt20.com/ipl/IPLHeadshot2025/57.png"
+  },
+
+  {
+    "name":"Hardik Pandya",
+    "role":"All-Rounder",
+    "pool":"MA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"MI",
+    "capped":true,
+    "sold":true,
+    "image":"https://documents.iplt20.com/ipl/IPLHeadshot2025/54.png"
+  },
+
+  {
+    "name":"Suryakumar Yadav",
+    "role":"Batter",
+    "pool":"MA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"MI",
+    "capped":true,
+    "sold":true,
+    "image":"https://documents.iplt20.com/ipl/IPLHeadshot2025/174.png"
+  },
+
+  {
+    "name":"Ravindra Jadeja",
+    "role":"All-Rounder",
+    "pool":"MA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"CSK",
+    "capped":true,
+    "sold":true,
+    "image":"https://documents.iplt20.com/ipl/IPLHeadshot2025/46.png"
+  },
+
+  {
+    "name":"Rashid Khan",
+    "role":"Spinner",
+    "pool":"MA1",
+    "country":"Afghanistan",
+    "overseas":true,
+    "basePrice":2,
+    "team":"GT",
+    "capped":true,
+    "sold":true,
+    "image":"https://documents.iplt20.com/ipl/IPLHeadshot2025/218.png"
+  },
+
+  {
+    "name":"Heinrich Klaasen",
+    "role":"Wicket Keeper",
+    "pool":"MA1",
+    "country":"South Africa",
+    "overseas":true,
+    "basePrice":2,
+    "team":"SRH",
+    "capped":true,
+    "sold":true,
+    "image":"https://documents.iplt20.com/ipl/IPLHeadshot2025/202.png"
+  },
+
+  {
+    "name":"Shubman Gill",
+    "role":"Batter",
+    "pool":"MA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"GT",
+    "capped":true,
+    "sold":true,
+    "image":"https://documents.iplt20.com/ipl/IPLHeadshot2025/62.png"
+  },
+
+  {
+    "name":"Ruturaj Gaikwad",
+    "role":"Batter",
+    "pool":"MA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"CSK",
+    "capped":true,
+    "sold":true,
+    "image":"https://documents.iplt20.com/ipl/IPLHeadshot2025/102.png"
+  },
+
+  {
+    "name":"Yashasvi Jaiswal",
+    "role":"Batter",
+    "pool":"MA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"RR",
+    "capped":true,
+    "sold":true,
+    "image":"https://documents.iplt20.com/ipl/IPLHeadshot2025/135.png"
+  },
+
+  {
+    "name":"Nicholas Pooran",
+    "role":"Wicket Keeper",
+    "pool":"MA1",
+    "country":"West Indies",
+    "overseas":true,
+    "basePrice":2,
+    "team":"LSG",
+    "capped":true,
+    "sold":true,
+    "image":"https://documents.iplt20.com/ipl/IPLHeadshot2025/136.png"
+  },
+
+  {
+    "name":"Axar Patel",
+    "role":"All-Rounder",
+    "pool":"MA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"DC",
+    "capped":true,
+    "sold":true,
+    "image":"https://documents.iplt20.com/ipl/IPLHeadshot2025/110.png"
+  },
+
+  {
+    "name":"Kuldeep Yadav",
+    "role":"Spinner",
+    "pool":"MA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"DC",
+    "capped":true,
+    "sold":true,
+    "image":"https://documents.iplt20.com/ipl/IPLHeadshot2025/14.png"
+  },
+
+  {
+    "name":"Sunil Narine",
+    "role":"All-Rounder",
+    "pool":"MA1",
+    "country":"West Indies",
+    "overseas":true,
+    "basePrice":2,
+    "team":"KKR",
+    "capped":true,
+    "sold":true,
+    "image":"https://documents.iplt20.com/ipl/IPLHeadshot2025/156.png"
+  },
+
+  {
+    "name":"Rinku Singh",
+    "role":"Batter",
+    "pool":"MA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"KKR",
+    "capped":true,
+    "sold":true,
+    "image":"https://documents.iplt20.com/ipl/IPLHeadshot2025/152.png"
+  },
+
+  {
+    "name":"Abhishek Sharma",
+    "role":"Batter",
+    "pool":"MA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"SRH",
+    "capped":true,
+    "sold":true,
+    "image":"https://documents.iplt20.com/ipl/IPLHeadshot2025/212.png"
+  },
+
+  {
+    "name":"Sanju Samson",
+    "role":"Wicket Keeper",
+    "pool":"MA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"RR",
+    "capped":true,
+    "sold":true,
+    "image":"https://documents.iplt20.com/ipl/IPLHeadshot2025/190.png"
+  },
+
+  {
+    "name":"Shivam Dube",
+    "role":"All-Rounder",
+    "pool":"MA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"CSK",
+    "capped":true,
+    "sold":true,
+    "image":"https://documents.iplt20.com/ipl/IPLHeadshot2025/211.png"
+  },
+
+  {
+    "name":"Varun Chakravarthy",
+    "role":"Spinner",
+    "pool":"MA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"KKR",
+    "capped":true,
+    "sold":true,
+    "image":"https://documents.iplt20.com/ipl/IPLHeadshot2025/543.png"
+  },
+
+  {
+    "name":"Mayank Yadav",
+    "role":"Bowler",
+    "pool":"MA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"LSG",
+    "capped":true,
+    "sold":true,
+    "image":"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+  },
+
+  {
+    "name":"Riyan Parag",
+    "role":"All-Rounder",
+    "pool":"MA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"RR",
+    "capped":true,
+    "sold":true,
+    "image":"https://documents.iplt20.com/ipl/IPLHeadshot2025/189.png"
+  },
+
+  {
+    "name":"Tilak Varma",
+    "role":"Batter",
+    "pool":"MA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"MI",
+    "capped":true,
+    "sold":true,
+    "image":"https://documents.iplt20.com/ipl/IPLHeadshot2025/707.png"
+  },
+
+  {
+    "name":"Nitish Kumar Reddy",
+    "role":"All-Rounder",
+    "pool":"MA1",
+    "country":"India",
+    "overseas":false,
+    "basePrice":2,
+    "team":"SRH",
+    "capped":true,
+    "sold":true,
+    "image":"https://documents.iplt20.com/ipl/IPLHeadshot2025/1946.png"
+  }
+]
+
+
+
+
+
+

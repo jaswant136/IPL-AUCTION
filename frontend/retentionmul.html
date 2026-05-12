@@ -1,0 +1,2135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Retention Center</title>
+
+<link rel="stylesheet"
+href="./style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="retention-page">
+
+<div class="retention-bg"></div>
+
+<!-- TOP -->
+
+<div class="retention-header">
+
+<div>
+
+<div class="retention-badge">
+
+MEGA AUCTION 2026
+
+</div>
+
+<h1 class="retention-main-title">
+
+Build Your
+<span>CORE SQUAD</span>
+
+</h1>
+
+<p class="retention-main-sub">
+
+Select your retained players before entering the mega auction.
+
+</p>
+
+</div>
+
+<div class="purse-box">
+
+<p>Remaining Purse</p>
+
+<h1>
+₹<span id="remaining-purse">
+130
+</span> Cr
+</h1>
+
+</div>
+
+</div>
+
+<!-- INFO CARDS -->
+
+<div class="retention-stats">
+
+<div class="retention-stat-card">
+
+<p>TOTAL RETENTIONS</p>
+
+<h1>
+<span id="retention-count">
+0
+</span>/6
+</h1>
+
+</div>
+
+<div class="retention-stat-card">
+
+<p>RTM CARDS</p>
+
+<h1 id="rtm-count">
+6
+</h1>
+
+</div>
+
+<div class="retention-stat-card">
+
+<p>SELECTED TEAM</p>
+
+<h1 id="team-name">
+
+CSK
+
+</h1>
+
+</div>
+
+</div>
+
+<!-- PLAYERS -->
+
+<div class="retention-grid"
+id="retention-grid">
+
+</div>
+
+<!-- BOTTOM -->
+
+<div class="retention-bottom">
+
+<div class="retention-summary">
+
+<div>
+
+<p>Spent</p>
+
+<h2>
+₹<span id="spent-money">
+0
+</span> Cr
+</h2>
+
+</div>
+
+<div>
+
+<p>Remaining</p>
+
+<h2 class="green">
+₹<span id="remaining-money">
+130
+</span> Cr
+</h2>
+
+</div>
+
+</div>
+
+<div class="retention-buttons">
+
+<button class="finalize-btn"
+onclick="finalizeRetention()">
+
+FINALIZE CORE
+
+</button>
+
+<button class="skip-btn"
+onclick="skipRetention()">
+
+SKIP RETENTIONS
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+const selectedTeam =
+localStorage.getItem(
+"selectedTeam"
+);
+
+document.getElementById(
+"team-name"
+).innerText = selectedTeam;
+
+// =========================
+// TEAM PLAYERS
+// =========================
+
+const retentionData = {
+
+"CSK":[
+
+{
+name:"MS Dhoni",
+role:"Wicket Keeper",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2025/57.png"
+},
+
+{
+name:"Ruturaj Gaikwad",
+role:"Batter",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2025/102.png"
+},
+
+{
+name:"Jamie Overton",
+role:"All-Rounder",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/1216.png"
+},
+
+{
+name:"Sanju Samson",
+role:"Wicket Keeper",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/190.png"
+},
+
+{
+name:"Shivam Dube",
+role:"All-Rounder",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2025/211.png"
+},
+
+{
+name:"Dewald Brevis",
+role:"Batter",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/797.png"
+},
+{
+name:"Sarfaraz Khan",
+role:"Batter",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/139.png"
+},
+{
+name:"Karthik Sharma",
+role:"Wicket Keeper",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/4540.png"
+},
+{
+name:"Urvil Patel",
+role:"Wicket Keeper",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/1486.png"
+},
+{
+name:"Ramakrishna Gosh",
+role:"All-Rounder",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/3559.png"
+},
+{
+name:"Zak Foulkes",
+role:"All-Rounder",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/3493.png"
+},
+{
+name:"P.Veer",
+role:"All-Rounder",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/4541.png"
+},
+{
+name:"Aman Khan",
+role:"All-Rounder",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/979.png"
+},
+{
+name:"M.Short",
+role:"All-Rounder",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/2032.png"
+},
+{
+name:"K.Ahmed",
+role:"Bowler",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/8.png"
+},
+{
+name:"N.Ahmed",
+role:"Bowler",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/975.png"
+},
+
+{
+name:"A.Kamboj",
+role:"All-Rounder",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/3106.png"
+},
+{
+name:"M.Choudhry",
+role:"Bowler",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/970.png"
+},
+{
+name:"S.Gopal",
+role:"Bowler",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/192.png"
+},
+{
+name:"M.Henry",
+role:"Bowler",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/71.png"
+},
+{
+name:"G.Singh",
+role:"Bowler",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/2256.png"
+},
+{
+name:"A.Hosein",
+role:"Bowler",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/722.png"
+},
+{
+name:"R.Chahar",
+role:"Bowler",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/171.png"
+},
+{
+name:"S.Jhonson",
+role:"Bowler",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/2518.png"
+}
+
+],
+
+"MI":[
+
+{
+name:"Jasprit Bumrah",
+role:"Bowler",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2025/9.png"
+},
+
+{
+name:"Hardik Pandya",
+role:"All-Rounder",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2025/54.png"
+},
+
+{
+name:"Suryakumar Yadav",
+role:"Batter",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/174.png"
+},
+
+{
+name:"Rohit Sharma",
+role:"Batter",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2025/6.png"
+},
+
+{
+name:"Tilak Varma",
+role:"Batter",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2025/993.png"
+},
+{
+name:"Sherfane Rutherford",
+role:"Batter",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/122.png"
+},
+{
+name:"Danish Malewar",
+role:"Batter",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/4546.png"
+},
+{
+name:"Q.De Kock",
+role:"Wicket Keeper",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/170.png"
+},
+{
+name:"R.Minz",
+role:"Wicket Keeper",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/3103.png"
+},
+{
+name:"R.Rickleton",
+role:"Wicket Keeper",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/743.png"
+},
+{
+name:"R.Bawa",
+role:"All-Rounder",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/781.png"
+},
+{
+name:"N.Dhir",
+role:"All-Rounder",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/3107.png"
+},
+{
+name:"S.Thakur",
+role:"All-Rounder",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/105.png"
+},
+{
+name:"W.Jacks",
+role:"All-Rounder",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/1941.png"
+},
+{
+name:"M.Rawat",
+role:"All-Rounder",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/1228.png"
+},
+{
+name:"K.Bhagat",
+role:"All-Rounder",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/5034.png"
+},
+{
+name:"C.Bosch",
+role:"All-Rounder",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/1041.png"
+},
+{
+name:"T.Boult",
+role:"Bowler",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/66.png"
+},
+{
+name:"D.Chahar",
+role:"Bowler",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/91.png"
+},
+
+{
+name:"M.Markande",
+role:"Bowler",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/87.png"
+},
+
+{
+name:"A.Kumar",
+role:"Bowler",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/3569.png"
+},
+
+{
+name:"R.Sharma",
+role:"Bowler",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/3869.png"
+},
+
+{
+name:"K.Maharaj",
+role:"Bowler",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/347.png"
+},
+
+{
+name:"M.Izhar",
+role:"Bowler",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/4545.png"
+},
+
+{
+name:"A.Ghazanfar",
+role:"Bowler",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/2761.png"
+}
+
+
+],
+
+"RCB":[
+
+{
+name:"Virat Kohli",
+role:"Batter",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/2.png"
+},
+
+{
+name:"Rajat Patidar",
+role:"Batter",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/597.png"
+},
+
+{
+name:"Devdutt Padikkal",
+role:"Batter",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/200.png"
+},
+
+{
+name:"Phil Salt",
+role:"WK-Batter",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/1220.png"
+},
+
+{
+name:"Jitesh Sharma",
+role:"WK-Batter",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/1000.png"
+},
+
+{
+name:"Jordan Cox",
+role:"WK-Batter",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/3372.png"
+},
+
+{
+name:"Krunal Pandya",
+role:"All-Rounder",
+price:1.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/17.png"
+},
+
+{
+name:"Swapnil Singh",
+role:"All-Rounder",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/1483.png"
+},
+
+{
+name:"Tim David",
+role:"All-Rounder",
+price:1.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/636.png"
+},
+
+{
+name:"Romario Shepherd",
+role:"All-Rounder",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/371.png"
+},
+
+{
+name:"Jacob Bethell",
+role:"All-Rounder",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/869.png"
+},
+
+{
+name:"Venkatesh Iyer",
+role:"All-Rounder",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/584.png"
+},
+
+{
+name:"Satvik Deswal",
+role:"All-Rounder",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/4555.png"
+},
+
+{
+name:"Mangesh Yadav",
+role:"All-Rounder",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/4554.png"
+},
+
+{
+name:"Vicky Ostwal",
+role:"All-Rounder",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/786.png"
+},
+
+{
+name:"Vihaan Malhotra",
+role:"All-Rounder",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/4012.png"
+},
+
+{
+name:"Kanishk Chouhan",
+role:"All-Rounder",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/4016.png"
+},
+
+{
+name:"Josh Hazlewood",
+role:"Bowler",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/36.png"
+},
+
+{
+name:"Rasikh Dar",
+role:"Bowler",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/172.png"
+},
+
+{
+name:"Suyash Sharma",
+role:"Bowler",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/1932.png"
+},
+
+{
+name:"Bhuvneshwar Kumar",
+role:"Bowler",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/15.png"
+},
+
+{
+name:"Nuwan Thushara",
+role:"Bowler",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/813.png"
+},
+
+{
+name:"Abhinandan Singh",
+role:"Bowler",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/3574.png"
+},
+
+{
+name:"Jacob Duffy",
+role:"Bowler",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/1701.png"
+},
+
+{
+name:"Yash Dayal",
+role:"Bowler",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/978.png"
+}
+
+
+],
+
+"KKR":[
+
+{
+name:"Ajinkya Rahane",
+role:"Batter",
+price:1.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/44.png"
+},
+
+{
+name:"Rinku Singh",
+role:"Batter",
+price:1.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/152.png"
+},
+
+{
+name:"Angkrish Raghuvanshi",
+role:"Batter",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/787.png"
+},
+
+{
+name:"Manish Pandey",
+role:"Batter",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/16.png"
+},
+
+{
+name:"Finn Allen",
+role:"WK-Batter",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/595.png"
+},
+
+{
+name:"Tejasvi Singh",
+role:"WK-Batter",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/4281.png"
+},
+
+{
+name:"Rahul Tripathi",
+role:"Batter",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/188.png"
+},
+
+{
+name:"Tim Seifert",
+role:"WK-Batter",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/82.png"
+},
+
+{
+name:"Rovman Powell",
+role:"Batter",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/329.png"
+},
+
+{
+name:"Anukul Roy",
+role:"All-Rounder",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/160.png"
+},
+
+{
+name:"Cameron Green",
+role:"All-Rounder",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/550.png"
+},
+
+{
+name:"Sarthak Ranjan",
+role:"All-Rounder",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/4203.png"
+},
+
+{
+name:"Daksh Kamra",
+role:"All-Rounder",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/4548.png"
+},
+
+{
+name:"Rachin Ravindra",
+role:"All-Rounder",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/724.png"
+},
+
+{
+name:"Ramandeep Singh",
+role:"All-Rounder",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/991.png"
+},
+
+{
+name:"Sunil Narine",
+role:"All-Rounder",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/156.png"
+},
+
+{
+name:"Blessing Muzarabani",
+role:"Bowler",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/827.png"
+},
+
+{
+name:"Vaibhav Arora",
+role:"Bowler",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/583.png"
+},
+
+{
+name:"Matheesha Pathirana",
+role:"Bowler",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/1014.png"
+},
+
+{
+name:"Kartik Tyagi",
+role:"Bowler",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/536.png"
+},
+
+{
+name:"Prashant Solanki",
+role:"Bowler",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/972.png"
+},
+
+{
+name:"Saurabh Dubey",
+role:"Bowler",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/1010.png"
+},
+
+{
+name:"Navdeep Saini",
+role:"Bowler",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/207.png"
+},
+
+{
+name:"Umran Malik",
+role:"Bowler",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/637.png"
+},
+
+{
+name:"Varun Chakaravarthy",
+role:"Bowler",
+price:1.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/140.png"
+}
+
+],
+
+"SRH":[
+
+{
+name:"Ishan Kishan",
+role:"WK-Batter",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/164.png"
+},
+
+{
+name:"Aniket Verma",
+role:"Batter",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/3576.png"
+},
+
+{
+name:"Smaran Ravichandran",
+role:"Batter",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/3752.png"
+},
+
+{
+name:"Salil Arora",
+role:"WK-Batter",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/4556.png"
+},
+
+{
+name:"Heinrich Klaasen",
+role:"WK-Batter",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/202.png"
+},
+
+{
+name:"Travis Head",
+role:"Batter",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/37.png"
+},
+
+{
+name:"Harshal Patel",
+role:"All-Rounder",
+price:1.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/114.png"
+},
+
+{
+name:"Kamindu Mendis",
+role:"All-Rounder",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/627.png"
+},
+
+{
+name:"Harsh Dubey",
+role:"All-Rounder",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/1494.png"
+},
+
+{
+name:"Shivang Kumar",
+role:"All-Rounder",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/4561.png"
+},
+
+{
+name:"Krains Fuletra",
+role:"All-Rounder",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/4557.png"
+},
+
+{
+name:"Liam Livingstone",
+role:"All-Rounder",
+price:1.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/183.png"
+},
+
+{
+name:"R.S Ambrish",
+role:"All-Rounder",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/assets/images/Default-Men.png"
+},
+
+{
+name:"Abhishek Sharma",
+role:"All-Rounder",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/212.png"
+},
+
+{
+name:"Nitish Kumar Reddy",
+role:"All-Rounder",
+price:1.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/1944.png"
+},
+
+{
+name:"Pat Cummins",
+role:"Bowler",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/33.png"
+},
+
+{
+name:"Zeeshan Ansari",
+role:"Bowler",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/3575.png"
+},
+
+{
+name:"Jaydev Unadkat",
+role:"Bowler",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/180.png"
+},
+
+{
+name:"Eshan Malinga",
+role:"Bowler",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/3339.png"
+},
+
+{
+name:"Sakib Hussain",
+role:"Bowler",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/3104.png"
+},
+
+{
+name:"Onkar Tarmale",
+role:"Bowler",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/4560.png"
+},
+
+{
+name:"Amit Kumar",
+role:"Bowler",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/4559.png"
+},
+
+{
+name:"Praful Hinge",
+role:"Bowler",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/4558.png"
+},
+
+{
+name:"Dilshan Madushanka",
+role:"Bowler",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/1018.png"
+},
+
+{
+name:"Gerald Coetzee",
+role:"Bowler",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/2535.png"
+}
+
+],
+
+"RR":[
+
+{
+name:"Shubham Dubey",
+role:"Batter",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/3112.png"
+},
+
+{
+name:"Vaibhav Suryavanshi",
+role:"Batter",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/3498.png"
+},
+
+{
+name:"Donovan Ferreira",
+role:"Batter",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/2033.png"
+},
+
+{
+name:"Lhuan-dre Pretorius",
+role:"Batter",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/2827.png"
+},
+
+{
+name:"Ravi Singh",
+role:"Batter",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/4550.png"
+},
+
+{
+name:"Aman Rao Perala",
+role:"Batter",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/4552.png"
+},
+
+{
+name:"Shimron Hetmyer",
+role:"Batter",
+price:1.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/210.png"
+},
+
+{
+name:"Yashasvi Jaiswal",
+role:"Batter",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/533.png"
+},
+
+{
+name:"Dhruv Jurel",
+role:"Batter",
+price:1.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/1004.png"
+},
+
+{
+name:"Riyan Parag",
+role:"Batter",
+price:1.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/189.png"
+},
+
+{
+name:"Yudhvir Singh Charak",
+role:"All-Rounder",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/587.png"
+},
+
+{
+name:"Ravindra Jadeja",
+role:"All-Rounder",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/46.png"
+},
+
+{
+name:"D.Shanaka",
+role:"All-Rounder",
+price:1.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/375.png"
+},
+
+{
+name:"Jofra Archer",
+role:"Bowler",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/181.png"
+},
+
+{
+name:"Tushar Deshpande",
+role:"Bowler",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/539.png"
+},
+
+{
+name:"Kwena Maphaka",
+role:"Bowler",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/801.png"
+},
+
+{
+name:"Ravi Bishnoi",
+role:"Bowler",
+price:1.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/520.png"
+},
+
+{
+name:"Sushant Mishra",
+role:"Bowler",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/1016.png"
+},
+
+{
+name:"Yash Raj Punja",
+role:"Bowler",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/4553.png"
+},
+
+{
+name:"Vignesh Puthur",
+role:"Bowler",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/3566.png"
+},
+
+{
+name:"Brijesh Sharma",
+role:"Bowler",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/4551.png"
+},
+
+{
+name:"Adam Milne",
+role:"Bowler",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/157.png"
+},
+
+{
+name:"Kuldeep Sen",
+role:"Bowler",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/1005.png"
+},
+
+{
+name:"Sandeep Sharma",
+role:"Bowler",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/220.png"
+},
+
+{
+name:"Nandre Burger",
+role:"Bowler",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/2806.png"
+}
+
+],
+
+"DC":[
+
+{
+name:"KL Rahul",
+role:"WK-Batter",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/19.png"
+},
+
+{
+name:"David Miller",
+role:"Batter",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/128.png"
+},
+
+{
+name:"Sameer Rizvi",
+role:"Batter",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/1229.png"
+},
+
+{
+name:"Axar Patel",
+role:"All-Rounder",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/110.png"
+},
+
+{
+name:"Kuldeep Yadav",
+role:"Bowler",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/14.png"
+},
+
+{
+name:"Abhishek Porel",
+role:"WK-Batter",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/1580.png"
+},
+
+{
+name:"Vipraj Nigam",
+role:"All-Rounder",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/3560.png"
+},
+
+{
+name:"Tristan Stubbs",
+role:"WK-Batter",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/1017.png"
+},
+
+{
+name:"Mukesh Kumar",
+role:"Bowler",
+price:1.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/1462.png"
+},
+
+{
+name:"Tripurana Vijay",
+role:"All-Rounder",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/3563.png"
+},
+
+{
+name:"Mitchell Starc",
+role:"Bowler",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/31.png"
+},
+
+{
+name:"Dushmantha Chameera",
+role:"Bowler",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/608.png"
+},
+
+{
+name:"Ajay Mandal",
+role:"All-Rounder",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/1931.png"
+},
+
+{
+name:"Karun Nair",
+role:"Batter",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/131.png"
+},
+
+{
+name:"T. Natarajan",
+role:"Bowler",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/224.png"
+},
+
+{
+name:"Ashutosh Sharma",
+role:"Batter",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/3109.png"
+},
+
+{
+name:"Madhav Tiwari",
+role:"All-Rounder",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/3561.png"
+},
+
+{
+name:"Nitish Rana",
+role:"Batter",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/148.png"
+},
+
+{
+name:"Rehan Ahmed",
+role:"Bowler",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/874.png"
+},
+
+{
+name:"Kyle Jamieson",
+role:"Bowler",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/382.png"
+},
+
+{
+name:"Lungi Ngidi",
+role:"Bowler",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/99.png"
+},
+
+{
+name:"Pathum Nissanka",
+role:"Batter",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/618.png"
+},
+
+{
+name:"Prithvi Shaw",
+role:"Batter",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/51.png"
+},
+
+{
+name:"Auqib Nabi",
+role:"Bowler",
+price:1.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/4543.png"
+},
+
+{
+name:"Sahil Ulhas Parakh",
+role:"Batter",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/4542.png"
+}
+
+],
+
+"LSG":[
+
+{
+name:"Aiden Markram",
+role:"Batter",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/287.png"
+},
+
+{
+name:"Himmat Singh",
+role:"Batter",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/203.png"
+},
+
+{
+name:"Akshat Raghuwanshi",
+role:"Batter",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/1487.png"
+},
+
+{
+name:"Josh Inglis",
+role:"WK-Batter",
+price:1.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/647.png"
+},
+
+{
+name:"Nicholas Pooran",
+role:"WK-Batter",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/136.png"
+},
+
+{
+name:"Rishabh Pant",
+role:"WK-Batter",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/18.png"
+},
+
+{
+name:"Matthew Breetzke",
+role:"WK-Batter",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/2805.png"
+},
+
+{
+name:"Mukul Choudhary",
+role:"WK-Batter",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/4549.png"
+},
+
+{
+name:"Mitchell Marsh",
+role:"All-Rounder",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/40.png"
+},
+
+{
+name:"Shahbaz Ahmed",
+role:"All-Rounder",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/523.png"
+},
+
+{
+name:"George Linde",
+role:"All-Rounder",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/340.png"
+},
+
+{
+name:"Arjun Tendulkar",
+role:"All-Rounder",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/585.png"
+},
+
+{
+name:"Ayush Badoni",
+role:"All-Rounder",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/985.png"
+},
+
+{
+name:"Abdul Samad",
+role:"All-Rounder",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/525.png"
+},
+
+{
+name:"Arshin Kulkarni",
+role:"All-Rounder",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/2788.png"
+},
+
+{
+name:"Mohammed Shami",
+role:"Bowler",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/47.png"
+},
+
+{
+name:"Anrich Nortje",
+role:"Bowler",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/142.png"
+},
+
+{
+name:"Avesh Khan",
+role:"Bowler",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/109.png"
+},
+
+{
+name:"Mohsin Khan",
+role:"Bowler",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/541.png"
+},
+
+{
+name:"Prince Yadav",
+role:"Bowler",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/1225.png"
+},
+
+{
+name:"Akash Singh",
+role:"Bowler",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/535.png"
+},
+
+{
+name:"Mayank Yadav",
+role:"Bowler",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/987.png"
+},
+
+{
+name:"Naman Tiwari",
+role:"Bowler",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/2801.png"
+},
+
+{
+name:"Manimaran Siddharth",
+role:"Bowler",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/532.png"
+},
+
+{
+name:"Digvesh Singh",
+role:"Bowler",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/3565.png"
+}
+
+],
+
+"GT":[
+
+{
+name:"Shubman Gill",
+role:"Batter",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/62.png"
+},
+
+{
+name:"Rahul Tewatia",
+role:"Batter",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/120.png"
+},
+
+{
+name:"Shahrukh Khan",
+role:"Batter",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/590.png"
+},
+
+{
+name:"Sai Sudharsan",
+role:"Batter",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/976.png"
+},
+
+{
+name:"Jos Buttler",
+role:"WK-Batter",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/182.png"
+},
+
+{
+name:"Tom Banton",
+role:"WK-Batter",
+price:1,
+image:""
+},
+
+{
+name:"Anuj Rawat",
+role:"WK-Batter",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/534.png"
+},
+
+{
+name:"Kumar Kushagra",
+role:"WK-Batter",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/3101.png"
+},
+
+{
+name:"Jayant Yadav",
+role:"All-Rounder",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/165.png"
+},
+
+{
+name:"Jason Holder",
+role:"All-Rounder",
+price:1.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/263.png"
+},
+
+{
+name:"Glenn Phillips",
+role:"All-Rounder",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/635.png"
+},
+
+{
+name:"Rashid Khan",
+role:"All-Rounder",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/218.png"
+},
+
+{
+name:"Washington Sundar",
+role:"All-Rounder",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/20.png"
+},
+
+{
+name:"Manav Suthar",
+role:"All-Rounder",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/2443.png"
+},
+
+{
+name:"Nishant Sindhu",
+role:"All-Rounder",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/791.png"
+},
+
+{
+name:"Ishant Sharma",
+role:"Bowler",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/50.png"
+},
+
+{
+name:"Mohammed Siraj",
+role:"Bowler",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/63.png"
+},
+
+{
+name:"Kagiso Rabada",
+role:"Bowler",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/116.png"
+},
+
+{
+name:"Luke Wood",
+role:"Bowler",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/3116.png"
+},
+
+{
+name:"Prasidh Krishna",
+role:"Bowler",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/150.png"
+},
+
+{
+name:"Gurnoor Brar",
+role:"Bowler",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/1231.png"
+},
+
+{
+name:"Ashok Sharma",
+role:"Bowler",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/980.png"
+},
+
+{
+name:"Sai Kishore",
+role:"Bowler",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/544.png"
+}
+
+],
+
+"PBKS":[
+
+{
+name:"Shreyas Iyer",
+role:"Batter",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/12.png"
+},
+
+{
+name:"Pyla Avinash",
+role:"Batter",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/3573.png"
+},
+
+{
+name:"Nehal Wadhera",
+role:"Batter",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/1541.png"
+},
+
+{
+name:"Priyansh Arya",
+role:"Batter",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/3571.png"
+},
+
+{
+name:"Harnoor Singh",
+role:"Batter",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/784.png"
+},
+
+{
+name:"Musheer Khan",
+role:"Batter",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/2813.png"
+},
+
+{
+name:"Vishnu Vinod",
+role:"WK-Batter",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/581.png"
+},
+
+{
+name:"Prabhsimran Singh",
+role:"WK-Batter",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/137.png"
+},
+
+{
+name:"Marcus Stoinis",
+role:"All-Rounder",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/23.png"
+},
+
+{
+name:"Shashank Singh",
+role:"All-Rounder",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/191.png"
+},
+
+{
+name:"Azmatullah Omarzai",
+role:"All-Rounder",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/1354.png"
+},
+
+{
+name:"Marco Jansen",
+role:"All-Rounder",
+price:1.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/586.png"
+},
+
+{
+name:"Mitchell Owen",
+role:"All-Rounder",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/3870.png"
+},
+
+{
+name:"Suryansh Shedge",
+role:"All-Rounder",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/2146.png"
+},
+
+{
+name:"Cooper Connolly",
+role:"All-Rounder",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/848.png"
+},
+
+{
+name:"Lockie Ferguson",
+role:"Bowler",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/69.png"
+},
+
+{
+name:"Ben Dwarshuis",
+role:"Bowler",
+price:1,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/632.png"
+},
+
+{
+name:"Vijaykumar Vyshak",
+role:"Bowler",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/2034.png"
+},
+
+{
+name:"Yash Thakur",
+role:"Bowler",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/1550.png"
+},
+
+{
+name:"Xavier Bartlett",
+role:"Bowler",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/3572.png"
+},
+
+{
+name:"Arshdeep Singh",
+role:"Bowler",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/125.png"
+},
+
+{
+name:"Yuzvendra Chahal",
+role:"Bowler",
+price:2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/10.png"
+},
+
+{
+name:"Praveen Dubey",
+role:"Bowler",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/548.png"
+},
+
+{
+name:"Harpreet Brar",
+role:"Bowler",
+price:0.5,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/130.png"
+},
+
+{
+name:"Vishal Nishad",
+role:"Bowler",
+price:0.2,
+image:"https://documents.iplt20.com/ipl/IPLHeadshot2026/4547.png"
+},
+]
+
+};
+
+// =========================
+// LOAD PLAYERS
+// =========================
+
+const grid =
+document.getElementById(
+"retention-grid"
+);
+
+const teamPlayers =
+retentionData[selectedTeam];
+
+let retainedPlayers = [];
+
+teamPlayers.forEach(player => {
+
+grid.innerHTML += `
+
+<div class="retention-player-card">
+
+<div class="retention-player-img">
+
+<img src="${player.image}">
+
+</div>
+
+<div class="retention-player-content">
+
+<h2>
+${player.name}
+</h2>
+
+<p>
+${player.role}
+</p>
+
+<div class="retention-price">
+
+₹${player.price} Cr
+
+</div>
+
+<button
+onclick='toggleRetention(
+${JSON.stringify(player)}
+,this
+)'
+class="retain-btn">
+
+RETAIN PLAYER
+
+</button>
+
+</div>
+
+</div>
+
+`;
+
+});
+
+// =========================
+// TOGGLE RETENTION
+// =========================
+
+function toggleRetention(player,btn){
+
+const exists =
+retainedPlayers.find(
+p => p.name === player.name
+);
+
+if(exists){
+
+retainedPlayers =
+retainedPlayers.filter(
+p => p.name !== player.name
+);
+
+btn.innerText =
+"RETAIN PLAYER";
+
+btn.classList.remove(
+"retained"
+);
+
+}else{
+
+if(retainedPlayers.length >= 6){
+
+alert(
+"Maximum 6 retentions allowed"
+);
+
+return;
+}
+
+retainedPlayers.push(player);
+
+btn.innerText =
+"RETAINED";
+
+btn.classList.add(
+"retained"
+);
+
+}
+
+updateRetention();
+}
+
+// =========================
+// UPDATE
+// =========================
+
+function updateRetention(){
+
+let spent = 0;
+
+retainedPlayers.forEach(player => {
+
+spent += player.price;
+
+});
+
+const remaining =
+130 - spent;
+
+document.getElementById(
+"retention-count"
+).innerText =
+retainedPlayers.length;
+
+document.getElementById(
+"spent-money"
+).innerText =
+spent;
+
+document.getElementById(
+"remaining-money"
+).innerText =
+remaining;
+
+document.getElementById(
+"remaining-purse"
+).innerText =
+remaining;
+
+document.getElementById(
+"rtm-count"
+).innerText =
+6 - retainedPlayers.length;
+}
+
+// =========================
+// FINALIZE
+// =========================
+
+async function finalizeRetention(){
+
+    try{
+
+        for(const player of retainedPlayers){
+
+            await fetch(
+                "http://127.0.0.1:5000/retain",
+                {
+                    method:"POST",
+
+                    headers:{
+                        "Content-Type":"application/json"
+                    },
+
+                    body:JSON.stringify({
+
+                        team:selectedTeam,
+
+                        player:player.name,
+
+                        price:player.price
+
+                    })
+                }
+            );
+
+        }
+
+        localStorage.setItem(
+            "retainedPlayers",
+            JSON.stringify(retainedPlayers)
+        );
+
+        window.location.href =
+        "index.html";
+
+    }catch(error){
+
+        console.log(error);
+
+        alert("Retention Failed");
+
+    }
+
+}
+</script>
+
+</body>
+
+</html>
