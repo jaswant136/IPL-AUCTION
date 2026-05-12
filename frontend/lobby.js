@@ -1,5 +1,5 @@
 const socket = io(
-"http://127.0.0.1:5000"
+"https://ipl-auction-8h1w.onrender.com"
 );
 
 const roomCode =

@@ -1,7 +1,7 @@
 async function loadPools(){
 
 const response = await fetch(
-"http://127.0.0.1:5000/pools"
+"https://ipl-auction-8h1w.onrender.com/pools"
 );
 
 const data = await response.json();

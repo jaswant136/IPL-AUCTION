@@ -57,7 +57,7 @@ async function loadTeams(){
 try{
 
 const response = await fetch(
-"http://127.0.0.1:5000/teams"
+"https://ipl-auction-8h1w.onrender.com/teams"
 );
 
 const teams =
@@ -165,7 +165,7 @@ try{
 clearInterval(timerInterval);
 
 const response = await fetch(
-"http://127.0.0.1:5000/get-player"
+"https://ipl-auction-8h1w.onrender.com/get-player"
 );
 
 const data =
@@ -640,7 +640,7 @@ async function sellPlayer(){
 try{
 
 const response = await fetch(
-"http://127.0.0.1:5000/sell",
+"https://ipl-auction-8h1w.onrender.com/sell",
 {
 method:"POST",
 
