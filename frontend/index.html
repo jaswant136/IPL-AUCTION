@@ -8,7 +8,7 @@
 <meta name="viewport"
 content="width=device-width, initial-scale=1.0">
 
-<title>IPL Auction</title>
+<title>IPLX Auction Simulator</title>
 
 <link rel="stylesheet"
 href="./style.css">
@@ -20,261 +20,198 @@ rel="stylesheet">
 
 <body>
 
-<div class="layout">
+<!-- NAVBAR -->
 
-<!-- SIDEBAR -->
+<nav class="navbar">
 
-<div class="sidebar">
+<div class="logo">
 
-<div>
-
-<h1 class="logo">
 IPL<span>X</span>
-</h1>
-
-<div class="menu">
-
-<button class="menu-btn active">
-🏏 Auction
-</button>
-
-<button
-class="menu-btn"
-onclick="window.location.href='teams.html'">
-
-👥 Teams
-
-</button>
-
-<button
-class="menu-btn"
-onclick="window.location.href='pool.html'">
-
-📋 Pools
-
-</button>
 
 </div>
 
-</div>
+<div class="nav-links">
 
-<!-- TEAM -->
-
-<div class="team-badge">
-
-<p>
-Your Franchise
-</p>
-
-<h2 id="my-team"></h2>
+<a href="#">Home</a>
+<a href="index.html">Modes</a>
+<a href="auction.html">Auction</a>
+<a href="teams.html">Teams</a>
+<a href="pool.html">Pools</a>
 
 </div>
 
-</div>
+<div class="nav-right">
 
-<!-- MAIN -->
 
-<div class="main">
-
-<!-- TOPBAR -->
-
-<div class="topbar">
-
-<div>
-
-<h1 class="title">
-IPL Mega Auction
-</h1>
-
-<p class="subtitle">
-Live Auction Dashboard
-</p>
-
-<div class="pool-live-box">
-
-Current Pool :
-<span id="current-pool">
-
-M1
-
-</span>
-
-</div>
-
-</div>
-
-<div class="timer-box">
-
-<span id="timer">
-10
-</span>s
-
-</div>
-
-</div>
-
-<!-- AUCTION PANEL -->
-
-<div class="auction-panel">
-
-<!-- PLAYER SECTION -->
-
-<div class="player-section">
-
-<div class="player-image">
+<div class="profile-box"
+onclick="window.location.href='profile.html'">
 
 <img
-id="player-img"
-src="https://documents.iplt20.com/ipl/assets/images/ipl-logo-new-old.png"
-alt="player">
+id="profile-img"
+class="profile-img"
+src="https://cdn-icons-png.flaticon.com/512/149/149071.png"
+>
 
 </div>
 
-<div class="player-info">
+</div>
 
-<p class="live-tag-player">
-LIVE PLAYER
-</p>
+</nav>
 
-<h1 id="player-name">
-Loading...
+<!-- HERO -->
+
+<section class="hero-section">
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+<div class="hero-left">
+
+<div class="hero-badge">
+
+<div class="live-dot"></div>
+
+LIVE IPL AUCTION EXPERIENCE
+
+</div>
+
+<h1 class="hero-title">
+
+Build Your
+Ultimate IPL
+Auction Dynasty
+
 </h1>
 
-<p id="player-role">
-Role
+<p class="hero-desc">
+
+Experience realistic IPL mega auctions with
+live bidding wars, AI franchises, RTM cards,
+retentions and multiplayer rooms.
+
+</p>
+
+<div class="hero-buttons">
+
+<button
+class="hero-primary-btn"
+onclick="createRoom()"//"window.location.href='teamselectmul.html'"// >
+
+CREATE ROOM
+
+</button>
+
+<button
+class="hero-secondary-btn"
+onclick="window.location.href='teamselect.html'">
+
+PLAY SOLO
+
+</button>
+
+</div>
+
+<div class="hero-stats">
+
+<div class="hero-stat-box">
+
+<h2>
+
+10
+
+</h2>
+
+<p>
+
+Franchises
+
+</p>
+
+</div>
+
+<div class="hero-stat-box">
+
+<h2>
+
+500+
+
+</h2>
+
+<p>
+
+Players
+
+</p>
+
+</div>
+
+<div class="hero-stat-box">
+
+<h2>
+
+LIVE
+
+</h2>
+
+<p>
+
+Auctions
+
 </p>
 
 </div>
 
 </div>
 
-<!-- BID SECTION -->
+</div>
 
-<div class="bid-section">
+<div class="hero-right">
 
-<div class="price-card">
+<div class="auction-live-card">
 
-<p>
-Base Price
+<div class="auction-card-top">
+
+<div>
+
+<p class="card-mini-text">
+
+CURRENT PLAYER
+
 </p>
 
 <h2>
-₹<span id="base-price">0.00</span> Cr
-</h2>
-
-</div>
-
-<div class="price-card active-price">
-
-<p>
-Current Bid
-</p>
-
-<h1>
-₹<span id="current-bid">0.00</span> Cr
-</h1>
-
-</div>
-<div
-id="highest-bidder"
-style="
-margin-top:15px;
-font-size:20px;
-font-weight:700;
-color:white;
-"
->
-
-Highest Bidder :
-<span style="color:#9ca3af;">
-No Bids Yet
-</span>
-
-</div>
-
-<!-- ACTION BUTTONS -->
-
-<div class="actions">
-
-<button
-id="bid-btn"
-class="primary-btn">
-
-Place Bid
-
-</button>
-
-<button
-id="pause-btn"
-class="secondary-btn pause-btn">
-
-Pause
-
-</button>
-
-<button
-id="skip-btn"
-class="secondary-btn skip-auction-btn">
-
-Skip
-
-</button>
-
-<button
-class="secondary-btn"
-onclick="window.location.href='teams.html'">
-
-Teams
-
-</button>
-
-<button
-class="secondary-btn"
-onclick="window.location.href='pool.html'">
-
-Pools
-
-</button>
-
-</div>
-
-</div>
-
-</div>
-
-<!-- SOLD / UNSOLD POPUP -->
-
-<div id="auction-popup"
-class="auction-popup-overlay hidden">
-
-<div class="auction-popup-card">
-
-<div id="popup-icon"
-class="popup-icon">
-
-🏏
-
-</div>
-
-<h1 id="popup-status">
-
-SOLD
-
-</h1>
-
-<h2 id="popup-player">
 
 Virat Kohli
 
 </h2>
 
-<p id="popup-team">
+</div>
 
-Sold To CSK
+<div class="timer-pill">
+
+10s
+
+</div>
+
+</div>
+
+<img
+src="https://documents.iplt20.com/ipl/IPLHeadshot2024/2.png"
+class="hero-player-img"
+>
+
+<div class="auction-info-grid">
+
+<div class="auction-info-box">
+
+<p>
+
+Current Bid
 
 </p>
 
-<h3 id="popup-price">
+<h3>
 
 ₹18 Cr
 
@@ -282,53 +219,47 @@ Sold To CSK
 
 </div>
 
-</div>
+<div class="auction-info-box">
 
-<!-- RTM POPUP -->
+<p>
 
-<div id="rtm-popup"
-class="auction-popup-overlay hidden">
-
-<div class="auction-popup-card rtm-card">
-
-<h1 class="rtm-title">
-
-RTM AVAILABLE
-
-</h1>
-
-<h2 id="rtm-player-name">
-
-Player Name
-
-</h2>
-
-<p class="rtm-price">
-
-Current Bid :
-₹<span id="rtm-price-value">
-0
-</span> Cr
+Highest Bidder
 
 </p>
 
-<div class="rtm-buttons">
+<h3>
 
-<button
-class="rtm-btn yes-btn"
-onclick="useRTM()">
+RCB
 
-Use RTM
+</h3>
 
-</button>
+</div>
 
-<button
-class="rtm-btn no-btn"
-onclick="skipRTM()">
+</div>
 
-Skip
+<div class="live-bid-row">
 
-</button>
+<div class="live-bid-team rcb">
+
+RCB
+
+</div>
+
+<div class="live-bid-team csk">
+
+CSK
+
+</div>
+
+<div class="live-bid-team mi">
+
+MI
+
+</div>
+
+<div class="live-bid-team gt">
+
+GT
 
 </div>
 
@@ -336,45 +267,142 @@ Skip
 
 </div>
 
-<!-- RESULT -->
-
-<div id="result"
-class="result">
+</div>
 
 </div>
 
-<!-- OVERVIEW -->
+</section>
 
-<div class="overview-top">
+<!-- FEATURES -->
 
-<h2 class="section-title">
+<section class="features-section">
 
-Teams Overview
+<h1>
+
+Why IPLX?
+
+</h1>
+
+<div class="features-grid">
+
+<div class="feature-card">
+
+<div class="feature-icon">
+
+⚡
+
+</div>
+
+<h2>
+
+Real-Time Auction
 
 </h2>
 
-<div class="live-indicator">
+<p>
 
-<div class="live-dot"></div>
+Live multiplayer auction
+with synchronized bidding.
 
-LIVE AUCTION
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="feature-icon">
+
+🏏
+
+</div>
+
+<h2>
+
+Build Playing XI
+
+</h2>
+
+<p>
+
+Buy players and create your
+ultimate IPL squad.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="feature-icon">
+
+🏆
+
+</div>
+
+<h2>
+
+RTM + Retention
+
+</h2>
+
+<p>
+
+Use retention rules and RTM cards
+like official IPL auctions.
+
+</p>
 
 </div>
 
 </div>
 
-<!-- TEAMS -->
+</section>
 
-<div id="teams"
-class="teams-grid">
+<script src="home.js"></script>
 
-</div>
+<script>
 
-</div>
+const profileImg =
+document.getElementById(
+"profile-img"
+);
 
-</div>
+const savedPhoto =
+localStorage.getItem(
+"userPhoto"
+);
 
-<script src="./script.js"></script>
+if(savedPhoto){
+
+profileImg.src = savedPhoto;
+
+}
+
+// =======================
+// MULTIPLAYER ROOM
+// =======================
+
+function createRoom(){
+
+alert(
+"Multiplayer rooms coming soon!"
+);
+
+}
+
+// =======================
+// JOIN ROOM
+// =======================
+
+function joinRoom(){
+
+alert(
+"Join room feature coming soon!"
+);
+
+}
+
+</script>
 
 </body>
 

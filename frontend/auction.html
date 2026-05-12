@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>IPL Auction</title>
+
+<link rel="stylesheet"
+href="./style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="layout">
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<div>
+
+<h1 class="logo">
+IPL<span>X</span>
+</h1>
+
+<div class="menu">
+
+<button class="menu-btn active">
+🏏 Auction
+</button>
+
+<button
+class="menu-btn"
+onclick="window.location.href='teams.html'">
+
+👥 Teams
+
+</button>
+
+<button
+class="menu-btn"
+onclick="window.location.href='pool.html'">
+
+📋 Pools
+
+</button>
+
+</div>
+
+</div>
+
+<!-- TEAM -->
+
+<div class="team-badge">
+
+<p>
+Your Franchise
+</p>
+
+<h2 id="my-team"></h2>
+
+</div>
+
+</div>
+
+<!-- MAIN -->
+
+<div class="main">
+
+<!-- TOPBAR -->
+
+<div class="topbar">
+
+<div>
+
+<h1 class="title">
+IPL Mega Auction
+</h1>
+
+<p class="subtitle">
+Live Auction Dashboard
+</p>
+
+<div class="pool-live-box">
+
+Current Pool :
+<span id="current-pool">
+
+M1
+
+</span>
+
+</div>
+
+</div>
+
+<div class="timer-box">
+
+<span id="timer">
+10
+</span>s
+
+</div>
+
+</div>
+
+<!-- AUCTION PANEL -->
+
+<div class="auction-panel">
+
+<!-- PLAYER SECTION -->
+
+<div class="player-section">
+
+<div class="player-image">
+
+<img
+id="player-img"
+src="https://documents.iplt20.com/ipl/assets/images/ipl-logo-new-old.png"
+alt="player">
+
+</div>
+
+<div class="player-info">
+
+<p class="live-tag-player">
+LIVE PLAYER
+</p>
+
+<h1 id="player-name">
+Loading...
+</h1>
+
+<p id="player-role">
+Role
+</p>
+
+</div>
+
+</div>
+
+<!-- BID SECTION -->
+
+<div class="bid-section">
+
+<div class="price-card">
+
+<p>
+Base Price
+</p>
+
+<h2>
+₹<span id="base-price">0.00</span> Cr
+</h2>
+
+</div>
+
+<div class="price-card active-price">
+
+<p>
+Current Bid
+</p>
+
+<h1>
+₹<span id="current-bid">0.00</span> Cr
+</h1>
+
+</div>
+<div
+id="highest-bidder"
+style="
+margin-top:15px;
+font-size:20px;
+font-weight:700;
+color:white;
+"
+>
+
+Highest Bidder :
+<span style="color:#9ca3af;">
+No Bids Yet
+</span>
+
+</div>
+
+<!-- ACTION BUTTONS -->
+
+<div class="actions">
+
+<button
+id="bid-btn"
+class="primary-btn">
+
+Place Bid
+
+</button>
+
+<button
+id="pause-btn"
+class="secondary-btn pause-btn">
+
+Pause
+
+</button>
+
+<button
+id="skip-btn"
+class="secondary-btn skip-auction-btn">
+
+Skip
+
+</button>
+
+<button
+class="secondary-btn"
+onclick="window.location.href='teams.html'">
+
+Teams
+
+</button>
+
+<button
+class="secondary-btn"
+onclick="window.location.href='pool.html'">
+
+Pools
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- SOLD / UNSOLD POPUP -->
+
+<div id="auction-popup"
+class="auction-popup-overlay hidden">
+
+<div class="auction-popup-card">
+
+<div id="popup-icon"
+class="popup-icon">
+
+🏏
+
+</div>
+
+<h1 id="popup-status">
+
+SOLD
+
+</h1>
+
+<h2 id="popup-player">
+
+Virat Kohli
+
+</h2>
+
+<p id="popup-team">
+
+Sold To CSK
+
+</p>
+
+<h3 id="popup-price">
+
+₹18 Cr
+
+</h3>
+
+</div>
+
+</div>
+
+<!-- RTM POPUP -->
+
+<div id="rtm-popup"
+class="auction-popup-overlay hidden">
+
+<div class="auction-popup-card rtm-card">
+
+<h1 class="rtm-title">
+
+RTM AVAILABLE
+
+</h1>
+
+<h2 id="rtm-player-name">
+
+Player Name
+
+</h2>
+
+<p class="rtm-price">
+
+Current Bid :
+₹<span id="rtm-price-value">
+0
+</span> Cr
+
+</p>
+
+<div class="rtm-buttons">
+
+<button
+class="rtm-btn yes-btn"
+onclick="useRTM()">
+
+Use RTM
+
+</button>
+
+<button
+class="rtm-btn no-btn"
+onclick="skipRTM()">
+
+Skip
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- RESULT -->
+
+<div id="result"
+class="result">
+
+</div>
+
+<!-- OVERVIEW -->
+
+<div class="overview-top">
+
+<h2 class="section-title">
+
+Teams Overview
+
+</h2>
+
+<div class="live-indicator">
+
+<div class="live-dot"></div>
+
+LIVE AUCTION
+
+</div>
+
+</div>
+
+<!-- TEAMS -->
+
+<div id="teams"
+class="teams-grid">
+
+</div>
+
+</div>
+
+</div>
+
+<script src="./script.js"></script>
+
+</body>
+
+</html>
